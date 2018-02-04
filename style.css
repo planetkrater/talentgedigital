@@ -1,0 +1,6254 @@
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- CONFIG MIXINS STYLES  ------------------------ */
+
+	/* line 26, ../scss/base/config/mixins.scss */
+	.hide {
+	  position: absolute;
+	  left: -9999px;
+	}
+	/* line 31, ../scss/base/config/mixins.scss */
+	.clear {
+	  clear: both;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ----------------------- CONFIG TYPE STYLES  ------------------------- */
+
+	/* line 5, ../scss/base/config/type.scss */
+	body {
+	  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 16px;
+	  line-height: 1.4em;
+	  font-weight: normal;
+	  color: #37393f;
+	}
+	/* line 20, ../scss/base/config/type.scss */
+	p,
+	a,
+	li {
+	  font-size: 16px;
+	  font-weight: 300;
+	  line-height: 1.4em;
+	}
+	/* line 24, ../scss/base/config/type.scss */
+	p strong,
+	a strong,
+	li strong {
+	  font-weight: 600;
+	}
+	/* line 31, ../scss/base/config/type.scss */
+	h1, h2, h3, h4, h5, h6 {
+	  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 16px;
+	  margin: 0 0 10px;
+	  font-weight: 600;
+	  color: #2b2d31;
+	}
+	/* line 37, ../scss/base/config/type.scss */
+	h1.hr, h2.hr, h3.hr, h4.hr, h5.hr, h6.hr {
+	  border-bottom: 1px solid #cccccc;
+	  padding-bottom: 6px;
+	  margin-bottom: 10px;
+	}
+	/* line 42, ../scss/base/config/type.scss */
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	  font-weight: inherit;
+	  font-size: inherit;
+	}
+	/* line 48, ../scss/base/config/type.scss */
+	h1 {
+	  font-size: 30px;
+	  line-height: 36px;
+	  color: #08a5e1;
+	}
+	/* line 54, ../scss/base/config/type.scss */
+	h5, h2 {
+	  color: #08a5e1;
+	  text-transform: uppercase;
+	  font-size: .9em;
+	}
+	/* line 60, ../scss/base/config/type.scss */
+	h6 {
+	  font-size: .9em;
+	  font-weight: normal;
+	}
+	/* line 71, ../scss/base/config/type.scss */
+	p.large {
+	  font-size: 1.2em;
+	}
+	/* line 74, ../scss/base/config/type.scss */
+	p.p-quote {
+	  font-size: 35px;
+	  font-weight: 200;
+	  line-height: 43px;
+	}
+	@media (max-width: 568px) {
+	  /* line 74, ../scss/base/config/type.scss */
+	  p.p-quote {
+		word-wrap: break-word;
+	  }
+	}
+	/* line 84, ../scss/base/config/type.scss */
+	p.p-caption {
+	  font-size: 14px;
+	  font-style: italic;
+	  color: #878787;
+	}
+	/* line 96, ../scss/base/config/type.scss */
+	a {
+	  color: inherit;
+	  text-decoration: underline;
+	}
+	/* line 100, ../scss/base/config/type.scss */
+	a:hover {
+	  color: inherit;
+	  text-decoration: underline;
+	}
+	/* line 104, ../scss/base/config/type.scss */
+	a:active {
+	  color: inherit;
+	}
+	/* line 105, ../scss/base/config/type.scss */
+	a:hover, a:focus {
+	  text-decoration: underline;
+	}
+
+	/* line 108, ../scss/base/config/type.scss */
+	a.link {
+	  color: #1d9ff2;
+	}
+	/* line 110, ../scss/base/config/type.scss */
+	a.link:hover {
+	  color: #0c84d0;
+	}
+	/* line 111, ../scss/base/config/type.scss */
+	a.link:active {
+	  color: #1d9ff2;
+	}
+	/* line 112, ../scss/base/config/type.scss */
+	a.link:hover, a.link:focus {
+	  text-decoration: underlined;
+	}
+
+	/* line 119, ../scss/base/config/type.scss */
+	ul {
+	  margin: 0 0 10px;
+	  list-style: none;
+	}
+	/* line 123, ../scss/base/config/type.scss */
+	ul.bullet {
+	  list-style: disc;
+	  padding-left: 20px;
+	}
+
+	/* line 128, ../scss/base/config/type.scss */
+	#jobdetail ul {
+	  list-style: inherit;
+	  list-style-type: disc;
+	}
+
+	/* line 132, ../scss/base/config/type.scss */
+	#jobdetail ul li ul {
+	  list-style: inherit;
+	  list-style: circle;
+	}
+
+	/* line 140, ../scss/base/config/type.scss */
+	.asc-survey-question {
+	  color: #08a5e1;
+	}
+	
+/* --------------------------------------------------------------------- */
+/* -------------------------- jQUERY STYLE  ---------------------------- */
+
+	/* line 10, ../scss/base/plugins/jquery-ui.scss */
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+	  border: none;
+	  border-radius: 0;
+	  background: #08a5e1;
+	  top: -2px;
+	  border: medium none;
+	  height: 16px;
+	  width: 12px;
+	}
+
+	/* line 25, ../scss/base/plugins/jquery-ui.scss */
+	.ui-datepicker-calendar .ui-state-default,
+	.ui-datepicker-calendar .ui-widget-content .ui-state-default,
+	.ui-datepicker-calendar .ui-widget-header .ui-state-default {
+	  width: auto;
+	  height: auto;
+	}
+
+	/* line 31, ../scss/base/plugins/jquery-ui.scss */
+	.ui-widget-header {
+	  background: #08a5e1;
+	}
+
+	/* line 35, ../scss/base/plugins/jquery-ui.scss */
+	.ui-slider-horizontal {
+	  height: 12px;
+	  background: #e5e5e5;
+	}
+
+	/* line 45, ../scss/base/plugins/jquery-ui.scss */
+	.ui-autocomplete {
+	  border-radius: 0;
+	}
+
+	/* line 50, ../scss/base/plugins/jquery-ui.scss */
+	.ui-menu .ui-menu-item a.ui-state-focus {
+	  background: #f2f2f2;
+	  border-radius: 0;
+	  border: medium none;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ----------------------- BOOTSTRAP STYLE ----------------------------- */
+
+	/* line 8, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control {
+	  width: 30px;
+	  height: 75px;
+	  background: rgba(124, 127, 136, 0.8);
+	  top: 50%;
+	  margin-top: -37px;
+	  opacity: 1;
+	  border: none;
+	  border-radius: 0;
+	  -webkit-transition: background 0.25s;
+	  -moz-transition: background 0.25s;
+	  -o-transition: background 0.25s;
+	  transition: background 0.25s;
+	}
+	/* line 18, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control.left {
+	  left: -8px;
+	}
+	/* line 20, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control.left span {
+	  left: 4px;
+	}
+	/* line 22, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control.right {
+	  right: -8px;
+	}
+	/* line 24, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control:hover {
+	  background: rgba(112, 114, 123, 0.8);
+	}
+	/* line 26, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control:hover span {
+	  color: #dddddf;
+	}
+	/* line 29, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-control span {
+	  font-size: 50px;
+	  text-shadow: none;
+	  height: 50px;
+	  position: absolute;
+	  left: 7px;
+	  top: 50%;
+	  margin-top: -25px;
+	  color: #d0d0d3;
+	  -webkit-transition: color 0.25s;
+	  -moz-transition: color 0.25s;
+	  -o-transition: color 0.25s;
+	  transition: color 0.25s;
+	}
+	/* line 41, ../scss/base/plugins/bootstrap.scss */
+	.carousel .carousel-indicators {
+	  display: none;
+	}
+
+	@media (max-width: 320px) {
+	  /* line 47, ../scss/base/plugins/bootstrap.scss */
+	  .carousel-control.right {
+		left: 92%;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 55, ../scss/base/plugins/bootstrap.scss */
+	  .carousel-control.right {
+		left: 96%;
+	  }
+	}
+	@media (max-width: 360px) {
+	  /* line 63, ../scss/base/plugins/bootstrap.scss */
+	  .carousel-control.right {
+		left: 93%;
+	  }
+	}
+	/* line 77, ../scss/base/plugins/bootstrap.scss */
+	.panel-group .panel + .panel {
+	  margin: 0;
+	}
+
+	/* line 81, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading + .panel-collapse .panel-body {
+	  padding: 0 0 10px;
+	}
+
+	/* line 85, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading {
+	  padding: 0;
+	  background: transparent;
+	  border: none;
+	  border-top: 1px solid #cccccc;
+	  border-radius: 0;
+	}
+	/* line 92, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading h4.panel-title {
+	  font-size: 13px;
+	  color: #878787;
+	}
+	/* line 95, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading h4.panel-title a {
+	  padding: 8px 0;
+	  display: block;
+	}
+	/* line 98, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading h4.panel-title a i {
+	  float: right;
+	  margin: -1px 10px 0 0;
+	  font-size: 15px;
+	}
+	/* line 105, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading h4.panel-title a:hover,
+	.panel-default > .panel-heading h4.panel-title a:active {
+	  color: #878787;
+	}
+	/* line 110, ../scss/base/plugins/bootstrap.scss */
+	.panel-default:last-child > .panel-heading {
+	  border-bottom: 1px solid #cccccc;
+	}
+	/* line 113, ../scss/base/plugins/bootstrap.scss */
+	.panel-group .panel {
+	  box-shadow: none;
+	  border-radius: 0;
+	  background: none;
+	  border: none;
+	}
+	/* line 119, ../scss/base/plugins/bootstrap.scss */
+	.panel-default > .panel-heading + .panel-collapse .panel-body {
+	  border: none;
+	}
+	/* line 127, ../scss/base/plugins/bootstrap.scss */
+	.dropdown-menu {
+	  border: none;
+	  border-radius: 0;
+	  padding: 0;
+	  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+	}
+	/* line 136, ../scss/base/plugins/bootstrap.scss */
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+	  background-color: #f2f2f2;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ------------------------ CONPONENTS BUTTON -------------------------- */
+
+	/* line 9, ../scss/base/components/button.scss */
+	input.btn,
+	button.btn,
+	a.btn,
+	.btn {
+	  font-weight: 300;
+	  border-radius: 0;
+	  border: none;
+	  box-shadow: none;
+	  padding-top: 6px;
+	  padding-bottom: 6px;
+	  -webkit-transition: all 0.2s;
+	  -moz-transition: all 0.2s;
+	  -o-transition: all 0.2s;
+	  transition: all 0.2s;
+	}
+	/* line 17, ../scss/base/components/button.scss */
+	input.btn:active, input.btn.active,
+	button.btn:active,
+	button.btn.active,
+	a.btn:active,
+	a.btn.active,
+	.btn:active,
+	.btn.active {
+	  box-shadow: none;
+	}
+
+	/* line 25, ../scss/base/components/button.scss */
+	.btn.btn-default {
+	  color: #08a5e1;
+	  border: 1px solid #08a5e1;
+	  background: transparent;
+	  font-weight: normal;
+	}
+	/* line 30, ../scss/base/components/button.scss */
+	.btn.btn-default:hover {
+	  color: #0793c8;
+	  border-color: #0793c8;
+	  background: #b9eafc;
+	}
+
+	/* line 37, ../scss/base/components/button.scss */
+	.btn.btn-primary {
+	  color: white;
+	  border: none;
+	  background: #08a5e1;
+	}
+	/* line 41, ../scss/base/components/button.scss */
+	.btn.btn-primary:hover {
+	  background: #079ad2;
+	  color: white;
+	}
+	/* line 45, ../scss/base/components/button.scss */
+	.btn.btn-primary:active {
+	  background: #0681b0;
+	}
+
+	/* line 50, ../scss/base/components/button.scss */
+	.btn.btn-secondary {
+	  color: white;
+	  border: none;
+	  background: #08a5e1;
+	}
+	/* line 54, ../scss/base/components/button.scss */
+	.btn.btn-secondary:hover {
+	  background: #079ad2;
+	}
+	/* line 57, ../scss/base/components/button.scss */
+	.btn.btn-secondary:active {
+	  background: #0681b0;
+	}
+
+	/* line 64, ../scss/base/components/button.scss */
+	.btn.btn-plain,
+	.btn-cancel,
+	.btn.asc-cancel {
+	  color: #37393f;
+	  background: #edeff2;
+	}
+	/* line 70, ../scss/base/components/button.scss */
+	.btn.btn-plain:active,
+	.btn-cancel:active,
+	.btn.asc-cancel:active {
+	  background: #cfd5dd;
+	}
+
+	/* line 77, ../scss/base/components/button.scss */
+	.btn.btn-plain.btn-danger:hover, .btn.btn-plain.btn-danger:active {
+	  color: white;
+	}
+	/* line 83, ../scss/base/components/button.scss */
+	.btn.btn-plain.btn-danger:active {
+	  background: #c72f29;
+	}
+
+	/* line 88, ../scss/base/components/button.scss */
+	.btn.btn-success {
+	  color: white;
+	  background: #98ca4a;
+	  opacity: 1;
+	}
+	/* line 95, ../scss/base/components/button.scss */
+	.btn.btn-success:active {
+	  background: #7eae33;
+	}
+
+	/* line 99, ../scss/base/components/button.scss */
+	.asc-trash .btn:last-child, .asc-trash-wrapper .btn:last-child {
+	  border-radius: 0px;
+	}
+
+	/* line 104, ../scss/base/components/button.scss */
+	.asc-trash .btn:nth-child(1), .asc-trash-wrapper .btn:nth-child(1) {
+	  background-image: none;
+	  background-color: #E15650;
+	}
+	/* line 108, ../scss/base/components/button.scss */
+	.asc-trash .btn:nth-child(1):hover, .asc-trash-wrapper .btn:nth-child(1):hover {
+	  background-color: #E15650;
+	}
+
+	/* line 113, ../scss/base/components/button.scss */
+	.btn.btn-danger {
+	  color: white;
+	  background: #da4f49;
+	  opacity: 1;
+	}
+	/* line 117, ../scss/base/components/button.scss */
+	.btn.btn-danger:hover {
+	  background: #da4f49;
+	}
+	/* line 120, ../scss/base/components/button.scss */
+	.btn.btn-danger:active {
+	  background: #c72f29;
+	}
+
+	/* line 125, ../scss/base/components/button.scss */
+	#asc-cta-upload-resume-button {
+	  cursor: pointer;
+	}
+
+	/* line 129, ../scss/base/components/button.scss */
+	.fa-cloud-upload {
+	  cursor: pointer;
+	}
+
+	/* line 139, ../scss/base/components/button.scss */
+	.btn.btn-social {
+	  border-radius: 0;
+	  padding: 12px 18px;
+	  padding-left: 58px;
+	  position: relative;
+	  text-align: left;
+	  font-weight: 300;
+	  font-size: 16px;
+	}
+	/* line 147, ../scss/base/components/button.scss */
+	.btn.btn-social:hover {
+	  border: none;
+	}
+	/* line 150, ../scss/base/components/button.scss */
+	.btn.btn-social.connected {
+	  opacity: .6;
+	}
+	/* line 152, ../scss/base/components/button.scss */
+	.btn.btn-social.connected:hover {
+	  cursor: default;
+	}
+	/* line 154, ../scss/base/components/button.scss */
+	.btn.btn-social i {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  bottom: 0;
+	  width: 44px;
+	  text-align: center;
+	  padding-top: 12px;
+	  font-size: 22px;
+	}
+
+	/* line 163, ../scss/base/components/button.scss */
+	.btn.btn-facebook {
+	  background: #3b5998;
+	  color: white;
+	}
+	/* line 166, ../scss/base/components/button.scss */
+	.btn.btn-facebook i {
+	  border-right: 1px solid #30487b;
+	}
+	/* line 169, ../scss/base/components/button.scss */
+	.btn.btn-facebook:hover {
+	  background: #344e86;
+	}
+
+	/* line 174, ../scss/base/components/button.scss */
+	.btn.btn-linkedin {
+	  background: #0e76a8;
+	  color: white;
+	}
+	/* line 177, ../scss/base/components/button.scss */
+	.btn.btn-linkedin i {
+	  border-right: 1px solid #0b5c82;
+	}
+	/* line 180, ../scss/base/components/button.scss */
+	.btn.btn-linkedin:hover {
+	  background: #0c6590;
+	}
+
+	/* line 189, ../scss/base/components/button.scss */
+	.btn.btn-lg {
+	  padding: 12px 30px;
+	  font-size: 16px;
+	}
+
+	/* line 194, ../scss/base/components/button.scss */
+	.btn.btn-wide {
+	  padding-left: 22px;
+	  padding-right: 22px;
+	}
+	/* line 197, ../scss/base/components/button.scss */
+	.btn.btn-wide.btn-lg {
+	  padding-left: 30px;
+	  padding-right: 30px;
+	}
+
+	/* line 202, ../scss/base/components/button.scss */
+	.btn.btn-xwide {
+	  padding-left: 36px;
+	  padding-right: 36px;
+	}
+	/* line 205, ../scss/base/components/button.scss */
+	.btn.btn-xwide.btn-lg {
+	  padding-left: 44px;
+	  padding-right: 44px;
+	}
+
+	/* line 211, ../scss/base/components/button.scss */
+	.btn.btn-short {
+	  padding-top: 2px;
+	  padding-bottom: 2px;
+	}
+
+	/* line 216, ../scss/base/components/button.scss */
+	.btn.btn-block {
+	  display: block;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ------------------------ CONPONENTS PANEL  -------------------------- */
+
+	/* line 5, ../scss/base/components/panel.scss */
+	.asc-panel {
+	  background: white;
+	  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14);
+	  padding: 20px;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ------------------------ CONPONENTS MIXINS -------------------------- */
+
+	/* line 49, ../scss/base/config/mixins.scss */
+	.form-group.search-form:before, .form-group.search-form:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	.form-group.search-form:after {
+	  clear: both;
+	}
+
+
+	
+/* --------------------------------------------------------------------- */
+/* ------------------------ CONPONENTS FORMS  -------------------------- */
+
+	/* line 5, ../scss/base/components/forms.scss */
+	  textarea {
+		min-height: 100px;
+	}
+	/* line 11, ../scss/base/components/forms.scss */
+	.form-group.search-form input[type="text"] {
+	  display: block;
+	  width: 80%;
+	}
+	/* line 15, ../scss/base/components/forms.scss */
+	.form-group.search-form button[type="submit"] {
+	  float: right;
+	  width: 16%;
+	  display: block;
+	}
+
+	/* line 22, ../scss/base/components/forms.scss */
+	label > span.small-label {
+	  font-size: 11px;
+	  vertical-align: top;
+	}
+
+	/* line 30, ../scss/base/components/forms.scss */
+	.radio input[type="radio"],
+	.radio-inline input[type="radio"],
+	.checkbox input[type="checkbox"],
+	.checkbox-inline input[type="checkbox"] {
+	  margin-top: 6px;
+	}
+
+	/* line 49, ../scss/base/components/forms.scss */
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	.uneditable-input {
+	  border: none;
+	  box-shadow: none;
+	  border-radius: 0;
+	  padding: 6px 8px;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  height: auto;
+	  font-weight: 300;
+	}
+	/* line 58, ../scss/base/components/forms.scss */
+	textarea.input-border,
+	input[type="text"].input-border,
+	input[type="password"].input-border,
+	input[type="datetime"].input-border,
+	input[type="datetime-local"].input-border,
+	input[type="date"].input-border,
+	input[type="month"].input-border,
+	input[type="time"].input-border,
+	input[type="week"].input-border,
+	input[type="number"].input-border,
+	input[type="email"].input-border,
+	input[type="url"].input-border,
+	input[type="search"].input-border,
+	input[type="tel"].input-border,
+	input[type="color"].input-border,
+	.uneditable-input.input-border {
+	  border: 1px solid #cccccc;
+	}
+
+	/* line 67, ../scss/base/components/forms.scss */
+	.dynamic_form_element_error {
+	  margin: 0;
+	}
+	/* line 69, ../scss/base/components/forms.scss */
+	.dynamic_form_element_error li {
+	  text-align: right;
+	  font-size: 12px;
+	  color: #c9533e;
+	  font-weight: 600;
+	  padding: 2px 0;
+	}
+
+	/* line 82, ../scss/base/components/forms.scss */
+	div.input-icon {
+	  position: relative;
+	}
+	/* line 84, ../scss/base/components/forms.scss */
+	div.input-icon input {
+	  border: 1px solid #cccccc;
+	  border-radius: 0;
+	  box-shadow: none;
+	  margin: 0;
+	  padding-left: 58px !important;
+	  padding: 11px 10px;
+	  height: 44px;
+	}
+	/* line 93, ../scss/base/components/forms.scss */
+	div.input-icon i {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  bottom: 0;
+	  padding-top: 14px;
+	  border-right: 1px solid #cccccc;
+	  width: 44px;
+	  text-align: center;
+	  display: block;
+	  color: #878787;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------- COMPONENTS SECTION  ------------------------- */
+
+	/* line 6, ../scss/base/components/section.scss */
+	section.section {
+	  padding: 40px 0;
+	  background: #f2f2f2;
+	}
+	@media (max-width: 767px) {
+	  /* line 6, ../scss/base/components/section.scss */
+	  section.section {
+		padding-left: 20px;
+		padding-right: 20px;
+	  }
+	}
+
+	/* line 15, ../scss/base/components/section.scss */
+	section.section-dark {
+	  background: #e5e5e5;
+	}
+
+	/* line 19, ../scss/base/components/section.scss */
+	section.section-hr-top {
+	  border-top: 1px solid #cccccc;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ----------------------- COMPONENTS ARTICLE  ------------------------- */
+
+	/* line 13, ../scss/base/components/articles.scss */
+	article.slideshow h5 {
+	  margin-top: 30px;
+	}
+
+	/* line 21, ../scss/base/components/articles.scss */
+	article.video h5 {
+	  margin-top: 30px;
+	}
+	/* line 32, ../scss/base/components/articles.scss */
+	article.video .video-wrap {
+	  max-height: 500px;
+	  max-width: 845px;
+	  position: relative;
+	}
+	/* line 36, ../scss/base/components/articles.scss */
+	article.video .video-wrap .video-thumb {
+	  position: absolute;
+	}
+
+	/* line 50, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-wrap .video {
+	  position: relative;
+	}
+	/* line 52, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-wrap.playing .video-preview {
+	  display: none;
+	}
+	/* line 53, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-wrap.playing .play-button {
+	  display: none;
+	}
+	/* line 56, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-preview {
+	  position: absolute;
+	  background: url("/img/about-us/video-thumbs/video-large.jpg") no-repeat;
+	  background-size: cover;
+	  z-index: 200;
+	}
+	/* line 62, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-preview:hover {
+	  cursor: pointer;
+	}
+	/* line 64, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails .video-preview:hover + span {
+	  color: rgba(255, 255, 255, 0.8);
+	}
+	/* line 68, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails span.play-button {
+	  position: absolute;
+	  font-size: 180px;
+	  color: rgba(255, 255, 255, 0.6);
+	  left: 50%;
+	  top: 50%;
+	  margin: -90px 0 0 -77px;
+	  z-index: 201;
+	  -webkit-transition: color 0.25s;
+	  -webkit-transition-delay: 0.05s;
+	  -moz-transition: color 0.25s 0.05s;
+	  -o-transition: color 0.25s 0.05s;
+	  transition: color 0.25s 0.05s;
+	}
+	/* line 77, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails span.play-button:hover {
+	  cursor: pointer;
+	  color: rgba(255, 255, 255, 0.8);
+	}
+	/* line 83, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails ul.video-thumbs {
+	  margin-top: 2.66%;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* -------------------------- CONFIG MIXINS ---------------------------- */
+
+	/* line 49, ../scss/base/config/mixins.scss */
+	article.video.video-thumbnails ul.video-thumbs:before, article.video.video-thumbnails ul.video-thumbs:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	article.video.video-thumbnails ul.video-thumbs:after {
+	  clear: both;
+	}
+
+/* --------------------------------------------------------------------- */
+/* ----------------------- CONPONENTS ARTICLE  ------------------------- */
+
+	/* line 88, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails ul.video-thumbs li {
+	  width: 23%;
+	  float: left;
+	}
+	/* line 91, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails ul.video-thumbs li > a {
+	  display: block;
+	  width: 100%;
+	  height: 90px;
+	  background-size: cover;
+	  opacity: .6;
+	  -webkit-transition: opacity 0.25s;
+	  -webkit-transition-delay: 0.15s;
+	  -moz-transition: opacity 0.25s 0.15s;
+	  -o-transition: opacity 0.25s 0.15s;
+	  transition: opacity 0.25s 0.15s;
+	}
+	@media (max-width: 568px) {
+	  /* line 91, ../scss/base/components/articles.scss */
+	  article.video.video-thumbnails ul.video-thumbs li > a {
+		height: 60px;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 91, ../scss/base/components/articles.scss */
+	  article.video.video-thumbnails ul.video-thumbs li > a {
+		height: 40px;
+	  }
+	}
+	/* line 102, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails ul.video-thumbs li.active a, article.video.video-thumbnails ul.video-thumbs li:hover a {
+	  opacity: 1;
+	}
+	/* line 106, ../scss/base/components/articles.scss */
+	article.video.video-thumbnails ul.video-thumbs li + li {
+	  margin-left: 2.66%;
+	}
+
+	/* line 112, ../scss/base/components/articles.scss */
+	.video-container {
+	  padding-bottom: 53.2%;
+	  padding-top: 25px;
+	  height: 0;
+	  overflow: hidden;
+	  transition: color 0.25s 0.05s;
+	}
+
+	/* line 121, ../scss/base/components/articles.scss */
+	.video-container iframe,
+	.video-container object,
+	.video-container embed,
+	.video-container .video-preview {
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	}
+
+	/* line 134, ../scss/base/components/articles.scss */
+	article.pull-quote-two-column div.pull-quote {
+	  text-align: center;
+	}
+	/* line 136, ../scss/base/components/articles.scss */
+	article.pull-quote-two-column div.pull-quote h5 {
+	  max-width: 220px;
+	  margin: 0 auto 20px;
+	}
+	/* line 140, ../scss/base/components/articles.scss */
+	article.pull-quote-two-column div.pull-quote p {
+	  margin-bottom: 40px;
+	}
+
+	/* line 148, ../scss/base/components/articles.scss */
+	article.collage {
+	  width: 100%;
+	  height: 345px;
+	  background-size: cover;
+	  background-position: center top;
+	}
+	@media (max-width: 992px) {
+	  /* line 148, ../scss/base/components/articles.scss */
+	  article.collage {
+		height: 300px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 148, ../scss/base/components/articles.scss */
+	  article.collage {
+		height: 220px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 148, ../scss/base/components/articles.scss */
+	  article.collage {
+		height: 170px;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 148, ../scss/base/components/articles.scss */
+	  article.collage {
+		height: 120px;
+	  }
+	}
+
+	/* line 164, ../scss/base/components/articles.scss */
+	article.locations {
+	  text-align: center;
+	}
+	/* line 166, ../scss/base/components/articles.scss */
+	article.locations > h5 {
+	  max-width: 220px;
+	  margin: 0 auto 30px;
+	}
+	/* line 172, ../scss/base/components/articles.scss */
+	article.locations div.map-container div.map-wrap {
+	  margin-bottom: 30px;
+	  padding: 25px;
+	}
+	/* line 175, ../scss/base/components/articles.scss */
+	article.locations div.map-container div.map-wrap div.map-image {
+	  height: auto;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  overflow: hidden;
+	}
+	@media (max-width: 992px) {
+	  /* line 172, ../scss/base/components/articles.scss */
+	  article.locations div.map-container div.map-wrap {
+		padding: 18px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 172, ../scss/base/components/articles.scss */
+	  article.locations div.map-container div.map-wrap {
+		padding: 10px;
+	  }
+	}
+	/* line 186, ../scss/base/components/articles.scss */
+	article.locations div.map-container h5 {
+	  color: #878787;
+	  margin-bottom: 8px;
+	}
+	/* line 190, ../scss/base/components/articles.scss */
+	article.locations div.map-container p {
+	  margin-bottom: 16px;
+	}
+	@media (max-width: 767px) {
+	  /* line 194, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container {
+		width: 30%;
+		float: left;
+	  }
+	  /* line 197, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container + div {
+		margin-left: 5%;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 202, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container {
+		display: block;
+		float: none;
+		width: 70%;
+		margin: 0 auto 30px;
+	  }
+	  /* line 207, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container + div {
+		margin: 0 auto 30px;
+	  }
+	  /* line 208, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container div.map-wrap {
+		margin-bottom: 16px;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 212, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container {
+		display: block;
+		float: none;
+		width: 90%;
+		margin: 0 auto 30px;
+	  }
+	  /* line 217, ../scss/base/components/articles.scss */
+	  article.locations div.content-panels > div.map-container div.map-wrap {
+		margin-bottom: 16px;
+	  }
+	}
+
+	/* line 228, ../scss/base/components/articles.scss */
+	article.photo-text .text-content h5 {
+	  margin-bottom: 20px;
+	  display: inline-block;
+	  padding-right: 100px;
+	}
+	/* line 233, ../scss/base/components/articles.scss */
+	article.photo-text .text-content div.lists {
+	  margin-top: 30px;
+	}
+	/* line 235, ../scss/base/components/articles.scss */
+	article.photo-text .text-content div.lists h6 {
+	  margin-bottom: 8px;
+	}
+	/* line 238, ../scss/base/components/articles.scss */
+	article.photo-text .text-content div.lists ul li {
+	  font-size: 14px;
+	  color: #878787;
+	}
+	@media (max-width: 767px) {
+	  /* line 245, ../scss/base/components/articles.scss */
+	  article.photo-text div.photo {
+		margin-bottom: 30px;
+		max-height: 800px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 251, ../scss/base/components/articles.scss */
+	  article.photo-text .text-content div.lists > * {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	  }
+	}
+
+	/* line 264, ../scss/base/components/articles.scss */
+	section.section.post-banner {
+	  height: 300px;
+	  background-image: url("/img/articles/article-banner.jpg");
+	  background-size: cover;
+	  background-position: bottom center;
+	}
+
+	/* line 270, ../scss/base/components/articles.scss */
+	section.section.posts.with-banner {
+	  margin-top: 0;
+	}
+	/* line 272, ../scss/base/components/articles.scss */
+	section.section.posts.with-banner div.asc-post-side-nav {
+	  margin-top: -50px;
+	}
+
+	/* line 279, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav {
+	  padding: 16px 20px;
+	}
+	/* line 281, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav h5 {
+	  margin-bottom: 8px;
+	}
+	/* line 282, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav h5 a {
+	  font-size: 14px;
+	  font-weight: normal;
+	}
+	/* line 286, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav ul {
+	  margin: 0;
+	}
+	/* line 287, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav li {
+	  border-top: 1px solid #cccccc;
+	}
+	/* line 289, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav li a {
+	  padding: 6px 8px;
+	  font-size: 12px;
+	  display: block;
+	  color: #878787;
+	  -webkit-transition: color 0.25s;
+	  -moz-transition: color 0.25s;
+	  -o-transition: color 0.25s;
+	  transition: color 0.25s;
+	}
+	/* line 295, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-side-nav li a:hover {
+	  color: #474747;
+	}
+	@media (max-width: 767px) {
+	  /* line 279, ../scss/base/components/articles.scss */
+	  article.asc-post div.asc-post-side-nav {
+		margin-bottom: 30px;
+	  }
+	}
+	/* line 303, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-content .asc-post-title h3 {
+	  color: #08a5e1;
+	  font-size: 19px;
+	  margin-bottom: 4px;
+	}
+	/* line 308, ../scss/base/components/articles.scss */
+	article.asc-post div.asc-post-content .asc-post-title p {
+	  font-size: 12px;
+	  font-weight: 600;
+	}
+	/* line 315, ../scss/base/components/articles.scss */
+	article.asc-post div.post-img {
+	  margin: 30px 0;
+	}
+	/* line 317, ../scss/base/components/articles.scss */
+	article.asc-post div.post-img p.caption {
+	  margin-top: 10px;
+	  font-size: .8em;
+	  padding: 0 20px;
+	}
+	/* line 327, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list li.asc-post-li {
+	  padding-bottom: 20px;
+	}
+	/* line 329, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list li.asc-post-li div.post-img {
+	  margin: 0 0 20px;
+	}
+	/* line 330, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list li.asc-post-li h3 {
+	  font-size: 16px;
+	  margin-bottom: 0;
+	  line-height: 1.1em;
+	}
+	/* line 335, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list li.asc-post-li p.by-line {
+	  margin: 0 0 8px;
+	}
+	/* line 336, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list li.asc-post-li .asc-post-inner-content p {
+	  margin: 0 0 10px;
+	}
+	/* line 338, ../scss/base/components/articles.scss */
+	article.asc-post ul.asc-post-list > li + li {
+	  border-top: 1px solid #cccccc;
+	  padding: 26px 0;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* -------------------------- SECTION BASE  ---------------------------- */
+
+	/* line 1, ../scss/base/sections/_base.scss */
+	body {
+	  background: #f2f2f2;
+	}
+
+	/* line 5, ../scss/base/sections/_base.scss */
+	#main_container .landing_content {
+	  min-height: 600px;
+	  top: 0;
+	  left: 0;
+	}
+
+
+	/* line 11, ../scss/base/sections/_base.scss */
+	.page-content {
+	  margin-top: 120px;
+	}
+	@media (max-width: 767px) {
+	  /* line 11, ../scss/base/sections/_base.scss */
+	  .page-content {
+		margin-top: 30px;
+	  }
+	}
+
+	/* line 19, ../scss/base/sections/_base.scss */
+	img {
+	  max-width: 100%;
+	}
+
+	/* line 26, ../scss/base/sections/_base.scss */
+	.asc-widget-parent-div h4 {
+	  color: #08a5e1;
+	}
+
+	/* line 32, ../scss/base/sections/_base.scss */
+	.link {
+	  cursor: hand;
+	}
+
+	@media (max-width: 767px) {
+	  /* line 40, ../scss/base/sections/_base.scss */
+	  body {
+		padding: 0;
+	  }
+	}
+	/* line 44, ../scss/base/sections/_base.scss */
+	.asc-clear-filters {
+	  text-decoration: none;
+	}
+
+	/* line 51, ../scss/base/sections/_base.scss */
+	.hero-controls a {
+	  text-decoration: none;
+	}
+
+	/* line 59, ../scss/base/sections/_base.scss */
+	#article-info a {
+	  text-decoration: none;
+	}
+
+	/* line 67, ../scss/base/sections/_base.scss */
+	.asc-post-side-nav a {
+	  text-decoration: none;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------- SECTION HEADER COOKIES  ----------------------- */
+
+	/* line 224, ../scss/base/sections/header.scss */
+	#cookies-acceptance-wrapper {
+	  background-color: #999999;
+	  height: auto;
+	  padding: 15px 20px;
+	}
+	/* line 229, ../scss/base/sections/header.scss */
+	#cookies-acceptance-wrapper .message {
+	  color: #FFFFFF;
+	  line-height: 18px;
+	  margin-bottom: 5px;
+	}
+	/* line 236, ../scss/base/sections/header.scss */
+	#cookies-acceptance-wrapper .text-right .ok-button {
+	  padding: 5px;
+	  color: #999999;
+	  background-color: #ffffff;
+	  border: none;
+	}
+	/* line 243, ../scss/base/sections/header.scss */
+	#cookies-acceptance-wrapper .text-right .tell-me-more-link {
+	  border: 1px solid #FFFFFF;
+	  width: 130px;
+	  color: #ffffff;
+	  padding: 5px 20px;
+	  display: inline-block;
+	  cursor: pointer;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------------- SECTION FOOTER  --------------------------- */
+
+	/* line 6, ../scss/base/sections/footer.scss */
+	footer {
+	  margin-top: 30px;
+	}
+	/* line 11, ../scss/base/sections/footer.scss */
+	footer p {
+	  color: #43454d;
+	  font-size: 12px;
+	  text-align: center;
+	}
+	/* line 16, ../scss/base/sections/footer.scss */
+	footer p span.asc-logo {
+	  border-radius: 25px;
+	  margin-left: 5px;
+	  margin-right: 5px;
+	}
+	/* line 24, ../scss/base/sections/footer.scss */
+	footer a {
+	  font-size: 12px;
+	}
+	/* line 29, ../scss/base/sections/footer.scss */
+	footer .asc-social-share-wrap {
+	  margin: 0 auto;
+	  max-width: 180px;
+	  width: 100%;
+	  padding: 5px 0;
+	}
+	/* line 37, ../scss/base/sections/footer.scss */
+	footer .share-span {
+	  text-transform: uppercase;
+	  font-size: 12px;
+	  line-height: 10px;
+	  text-align: right;
+	  font-weight: 600;
+	  float: left;
+	  display: block;
+	  position: relative;
+	  top: 5px;
+	  color: #878787;
+	}
+
+	
+/* --------------------------------------------------------------------- */
+/* ------------------------- SECTION LANDING --------------------------- */
+
+	/* line 6, ../scss/base/sections/landing.scss */
+	#background-image {
+	  position: fixed;
+	  width: 100%;
+	  top: 0;
+	  height: 500px;
+	  background-size: cover;
+	  background-position: top center;
+	  z-index: -1;
+	  opacity: 1;
+	}
+	@media (max-width: 767px) {
+	  /* line 6, ../scss/base/sections/landing.scss */
+	  #background-image {
+		background-position: center top;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 6, ../scss/base/sections/landing.scss */
+	  #background-image {
+		background-position: center top;
+		background-size: auto 100%;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 6, ../scss/base/sections/landing.scss */
+	  #background-image {
+		background-position: center top;
+	  }
+	}
+
+	/* line 33, ../scss/base/sections/landing.scss */
+	._landing > .hero-wrap {
+	  height: 500px;
+	  width: 100%;
+	  position: relative;
+	  top: 0;
+	}
+	/* line 38, ../scss/base/sections/landing.scss */
+	._landing > .hero-wrap .hero-controls {
+	  max-width: 600px;
+	  text-align: center;
+	  margin: 0 auto;
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: 60px;
+	  width: 90%;
+	}
+	/* line 47, ../scss/base/sections/landing.scss */
+	._landing > .hero-wrap .hero-controls h1 {
+	  font-size: 52px;
+	  line-height: 55px;
+	  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	  color: white;
+	  font-weight: 200;
+	  margin-bottom: 26px;
+	}
+	/* line 56, ../scss/base/sections/landing.scss */
+	._landing > .hero-wrap .hero-controls a.btn {
+	  color: white;
+	  border-color: white;
+	  -webkit-transition: background 0.25s;
+	  -moz-transition: background 0.25s;
+	  -o-transition: background 0.25s;
+	  transition: background 0.25s;
+	}
+	/* line 60, ../scss/base/sections/landing.scss */
+	._landing > .hero-wrap .hero-controls a.btn:hover {
+	  background: rgba(255, 255, 255, 0.1);
+	}
+	@media (max-width: 568px) {
+	  /* line 70, ../scss/base/sections/landing.scss */
+	  ._landing > .hero-wrap .hero-controls h1 {
+		font-size: 36px;
+		line-height: 40px;
+		margin-bottom: 16px;
+	  }
+	}
+
+	/* line 84, ../scss/base/sections/landing.scss */
+	body[data-device-type="tablet"] #background-image,
+	body[data-device-type="tv"] #background-image,
+	body[data-device-type="mobile"] #background-image {
+	  *position: relative;
+	}*/
+	/* line 88, ../scss/base/sections/landing.scss */
+	body[data-device-type="tablet"] ._landing > .hero-wrap,
+	body[data-device-type="tv"] ._landing > .hero-wrap,
+	body[data-device-type="mobile"] ._landing > .hero-wrap {
+	  *margin-top: -580px;
+	}
+	@media (max-width: 568px) {
+	  /* line 93, ../scss/base/sections/landing.scss */
+	  body[data-device-type="tablet"] ._landing > .hero-wrap,
+	  body[data-device-type="tv"] ._landing > .hero-wrap,
+	  body[data-device-type="mobile"] ._landing > .hero-wrap {
+		*margin-top: -400px;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* -------------------------- MISC SECTIONS ---------------------------- */
+
+	/* SECTION LANDING CONTENT */
+
+	/* line 104, ../scss/base/sections/landing.scss */
+	._landing > .content {
+	  /* position: relative; */
+	  top: 500px;
+	  /* z-index: 1; */
+	}
+	/* line 108, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels {
+	  margin-top: -70px;
+	  margin-left: 0;
+	  margin-right: 0;
+	  position: relative;
+	  z-index: 5;
+	}
+	/* line 115, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels > div {
+	  padding-left: 0;
+	  padding-right: 0;
+	  width: 31.6239%;
+	}
+	@media (max-width: 767px) {
+	  /* line 115, ../scss/base/sections/landing.scss */
+	  ._landing > .content div.content-panels > div {
+		min-width: 317px;
+		width: 95%;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 115, ../scss/base/sections/landing.scss */
+	  ._landing > .content div.content-panels > div {
+		min-width: 95%;
+		width: 95%;
+	  }
+	}
+	/* line 131, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels > div:nth-child(n+2) {
+	  margin-left: 2.5641%;
+	}
+	/* line 134, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels .asc-panel {
+	  padding: 0;
+	}
+	/* line 136, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels .panel-image {
+	  height: 195px;
+	  background-size: cover;
+	  background-position: bottom center;
+	}
+	/* line 141, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels .panel-bottom {
+	  padding: 16px 20px;
+	}
+	/* line 144, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels .panel-bottom h5 {
+	  margin-bottom: 6px;
+	}
+	/* line 148, ../scss/base/sections/landing.scss */
+	._landing > .content div.content-panels .panel-bottom a.btn {
+	  margin-left: -20px;
+	  padding-left: 20px;
+	}
+	@media (max-width: 767px) {
+	  /* line 156, ../scss/base/sections/landing.scss */
+	  ._landing > .content div.content-panels > * {
+		width: 60%;
+		margin: 0 auto 20px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 163, ../scss/base/sections/landing.scss */
+	  ._landing > .content div.content-panels > * {
+		width: 100%;
+	  }
+	}
+	/* line 175, ../scss/base/sections/landing.scss */
+	._landing section.our-people div.people-content h5, ._landing section.our-people div.people-content p {
+	  text-align: center;
+	}
+	/* line 176, ../scss/base/sections/landing.scss */
+	._landing section.our-people div.people-content h5 {
+	  width: 230px;
+	  margin: 0 auto 16px;
+	  padding-bottom: 8px;
+	  border-bottom: 1px solid #cccccc;
+	}
+	/* line 182, ../scss/base/sections/landing.scss */
+	._landing section.our-people div.people-content p {
+	  margin-bottom: 16px;
+	}
+	/* line 192, ../scss/base/sections/landing.scss */
+	._landing section.join-community div.join p {
+	  margin-bottom: 30px;
+	}
+	/* line 193, ../scss/base/sections/landing.scss */
+	._landing section.join-community div.join a {
+	  margin-right: 10px;
+	}
+	/* line 196, ../scss/base/sections/landing.scss */
+	._landing section.join-community div.description h5 {
+	  margin-bottom: 10px;
+	}
+	/* line 197, ../scss/base/sections/landing.scss */
+	._landing section.join-community div.description li {
+	  font-weight: 300;
+	  margin-bottom: 6px;
+	}
+	@media (max-width: 767px) {
+	  /* line 195, ../scss/base/sections/landing.scss */
+	  ._landing section.join-community div.description {
+		margin-top: 30px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 216, ../scss/base/sections/landing.scss */
+	  ._landing section.section {
+		padding-left: 20px;
+		padding-right: 20px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 224, ../scss/base/sections/landing.scss */
+	  ._landing section.section {
+		padding-left: 5px;
+		padding-right: 5px;
+	  }
+	}
+	@media (max-width: 377px) {
+	  /* line 224, ../scss/base/sections/landing.scss */
+	  .content .content-panels,
+	  .content .content-panels .container  {
+		padding-left: 0;
+		padding-right: 0;
+	  }
+	}
+
+	/* SECTION CAREERS */
+
+	/* line 10, ../scss/base/sections/careers.scss */
+	#jobmenu .asc-navbar {
+	  background: none;
+	}
+
+	/* line 49, ../scss/base/config/mixins.scss */
+	#jobs-sidebar div:nth-child(1):before, #jobs-sidebar div:nth-child(1):after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#jobs-sidebar div:nth-child(1):after {
+	  clear: both;
+	}
+	/* line 20, ../scss/base/sections/careers.scss */
+	#jobs-sidebar div:nth-child(1) > h5 {
+	  width: 100px;
+	  font-size: 15px;
+	  font-weight: normal;
+	  float: left;
+	}
+	@media (max-width: 767px) {
+	  /* line 20, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar div:nth-child(1) > h5 {
+		float: none;
+	  }
+	}
+	/* line 32, ../scss/base/sections/careers.scss */
+	#jobs-sidebar div:nth-child(1) .asc-clear-filters {
+	  float: right;
+	  color: #999;
+	  font-size: .9em;
+	}
+	/* line 39, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #candidate-custom {
+	  display: block !important;
+	}
+	/* line 42, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #candidate-custom .asc-dynamic-picklist .asc-client-filters {
+	  display: block !important;
+	}
+	/* line 47, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #job-location {
+	  display: block !important;
+	}
+	/* line 53, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .jobs-module > h5 {
+	  width: auto !important;
+	}
+	/* line 60, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #candidate-category-select {
+	  height: 34px;
+	  overflow: hidden;
+	  font-size: 14px;
+	  padding-left: 5px;
+	  padding-top: 5px;
+	}
+	/* line 68, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #asc-map-viewall {
+	  display: none;
+	}
+	/* line 73, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu .asc-dynamic-picklist-title {
+	  color: #878787 !important;
+	  font-size: 13px;
+	  cursor: pointer;
+	  padding: 5px;
+	}
+	/* line 80, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #candidate-custom > div > div:nth-child(2) {
+	  border-top: 1px solid #ccc;
+	  margin-top: 10px;
+	}
+	/* line 85, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu .asc-custom-title {
+	  display: block;
+	  color: #08a5e1;
+	  margin-top: 10px;
+	  font-weight: normal;
+	  text-transform: uppercase;
+	  margin-bottom: 5px;
+	}
+	/* line 94, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu .region-label {
+	  padding-left: 15px;
+	}
+	/* line 100, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #asc-job-map-location-label {
+	  display: none;
+	}
+	/* line 104, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #job-location-text {
+	  height: 34px;
+	  padding: 10px 10px 8px;
+	  width: 100% !important;
+	}
+	/* line 110, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #jobs-sidebar .submenu-dropdown-inner {
+	  padding: 0px 0;
+	}
+	/* line 114, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #job-location > div {
+	  padding: 0;
+	}
+	/* line 118, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #asc-null-location {
+	  margin-top: 0;
+	}
+	/* line 121, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #candidate-category-select {
+	  display: block;
+	}
+	/* line 124, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #jobmenu #candidate_category_select_chosen, #jobs-sidebar #jobmenu .asc-app-chosen, #jobs-sidebar #jobmenu .asc-client-filters {
+	  display: none;
+	}
+	/* line 129, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-nav-search {
+	  float: none;
+	  margin-bottom: 10px;
+	}
+	/* line 134, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-nav-search #asc-map-primary-search {
+	  border-radius: 0;
+	  width: 100%;
+	  height: 34px;
+	  line-height: 1em;
+	  font-size: 14px;
+	  box-shadow: none;
+	  border: none;
+	  position: relative;
+	  top: 0;
+	  right: 0;
+	  display: inherit;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  padding: 10px 10px 5px;
+	  margin: 0;
+	}
+	@media (max-width: 767px) {
+	  /* line 134, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar #map-nav-search #asc-map-primary-search {
+		margin-left: 6px;
+		right: 6px;
+	  }
+	}
+	/* line 155, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-nav-search i {
+	  border-radius: 0;
+	  border: none;
+	  color: white;
+	  font-size: 14px;
+	  right: 0;
+	  background: #08a5e1;
+	  top: 0;
+	  bottom: 0;
+	  height: 34px;
+	  margin: 0;
+	  padding-top: 7px;
+	  text-align: center;
+	  width: 33px;
+	  display: inherit;
+	}
+	/* line 173, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #submenu-filter {
+	  display: none;
+	}
+	/* line 177, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-map-always-show-menu {
+	  display: none;
+	  margin-bottom: 10px;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#jobs-sidebar .asc-map-always-show-menu:before, #jobs-sidebar .asc-map-always-show-menu:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#jobs-sidebar .asc-map-always-show-menu:after {
+	  clear: both;
+	}
+	/* line 182, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-map-always-show-menu #candidate-category-select {
+	  width: 100%;
+	  margin: 0;
+	}
+	/* line 188, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-navbar-full {
+	  display: none;
+	}
+	/* line 192, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-navbar-full .asc-filter {
+	  display: none !important;
+	}
+	/* line 196, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-navbar-full button {
+	  color: #37393f;
+	  border: none;
+	  border-bottom: 4px solid transparent;
+	  -webkit-appearance: none;
+	}
+	/* line 202, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #map-navbar-full button.subopen {
+	  border-color: #08a5e1;
+	  box-shadow: none;
+	}
+	/* line 209, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #header-sub-meu label {
+	  display: inline;
+	}
+	/* line 214, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown {
+	  border: none;
+	  color: #878787;
+	}
+	/* line 219, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner {
+	  padding: 20px 0;
+	}
+	/* line 222, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .search-wrap {
+	  position: relative;
+	  margin-bottom: 10px;
+	  float: none !important;
+	  width: 100%;
+	}
+	/* line 228, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .search-wrap input {
+	  margin: 0;
+	  padding-right: 0px;
+	}
+	/* line 233, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .search-wrap button {
+	  position: absolute;
+	  right: 0;
+	  top: 32px;
+	  bottom: 0;
+	  width: 30px;
+	  background: #08a5e1;
+	  border-radius: 0;
+	  opacity: 1;
+	  height: auto;
+	  width: 33px;
+	  -webkit-appearance: none;
+	}
+	/* line 247, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .search-wrap button i {
+	  color: white;
+	  text-shadow: none;
+	}
+	/* line 254, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .region-label {
+	  font-size: 13px;
+	  margin-bottom: 10px;
+	  margin-left: 0px;
+	  float: left;
+	}
+	/* line 260, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .region-label input {
+	  margin-left: 0 !important;
+	}
+	@media (max-width: 992px) {
+	  /* line 266, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar .submenu-dropdown-inner .region-label {
+		white-space: normal;
+		padding: 0px;
+	  }
+	}
+	@media (max-width: 1200px) {
+	  /* line 273, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar .submenu-dropdown-inner .region-label {
+		white-space: normal;
+		padding: 0px;
+	  }
+	}
+	/* line 278, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner .asc-location-slider {
+	  /*  @include clearfix; */
+	  width: 100% !important;
+	}
+	/* line 282, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .submenu-dropdown-inner #asc-location-spinner {
+	  display: none !important;
+	}
+	/* line 287, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #asc-map-viewall {
+	  background: #e5e5e5;
+	  color: #37393f;
+	  padding: 0 5px 5px;
+	  margin-top: 20px;
+	  height: auto;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#jobs-sidebar #asc-map-viewall:before, #jobs-sidebar #asc-map-viewall:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#jobs-sidebar #asc-map-viewall:after {
+	  clear: both;
+	}
+	/* line 295, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #asc-map-viewall a {
+	  display: block !important;
+	  margin: 0;
+	  background: #08a5e1;
+	  color: #37393f !important;
+	  border-radius: 0;
+	  padding: 6px 8px;
+	}
+	/* line 305, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .jobs-module {
+	  margin-top: 30px;
+	}
+	/* line 309, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist-title {
+	  margin: 0 0 5px;
+	  font-weight: 600;
+	  color: #08a5e1;
+	  border-bottom: 1px solid #cccccc;
+	}
+	/* line 316, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist-title {
+	  margin-bottom: 5px;
+	}
+	/* line 319, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist {
+	  margin-bottom: 20px;
+	}
+	/* line 324, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist,
+	#jobs-sidebar #job-type .submenu-dropdown-inner > div {
+	  background: none;
+	  border: none;
+	  padding-left: 20px;
+	  font-size: 14px;
+	}
+	/* line 330, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist input,
+	#jobs-sidebar #job-type .submenu-dropdown-inner > div input {
+	  margin: 0 3px 0 -20px;
+	}
+	/* line 335, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist-more {
+	  margin-top: -15px;
+	}
+	/* line 338, ../scss/base/sections/careers.scss */
+	#jobs-sidebar .asc-dynamic-picklist-more a {
+	  background: none;
+	}
+	/* line 343, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #asc-job-organizations {
+	  margin-bottom: 10px !important;
+	  width: 100%;
+	}
+	/* line 348, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #candidate-search-org-btn {
+	  float: right;
+	}
+	/* line 352, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #asc-org-holder {
+	  margin-top: 40px;
+	}
+	/* line 355, ../scss/base/sections/careers.scss */
+	#jobs-sidebar #asc-org-holder .asc-label-skills {
+	  background: #d8d8d8;
+	  color: #37393f;
+	  text-shadow: none;
+	  border-radius: 3px;
+	  padding: 4px 5px 4px 10px;
+	}
+	@media (max-width: 767px) {
+	  /* line 365, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar {
+		padding-left: 20px;
+		padding-right: 20px;
+	  }
+
+	  /* line 366, ../scss/base/sections/careers.scss */
+	  .jobs-content {
+		padding-left: 20px;
+		padding-right: 20px;
+	  }
+	}
+	/* line 369, ../scss/base/sections/careers.scss */
+	#mile-range {
+	  bottom: 38px;
+	  left: 18%;
+	  position: relative;
+	}
+	@media (max-width: 992px) {
+	  /* line 379, ../scss/base/sections/careers.scss */
+	  #mile-range {
+		left: 45px;
+	  }
+	}
+	@media (max-width: 1200px) {
+	  /* line 386, ../scss/base/sections/careers.scss */
+	  #mile-range {
+		left: 45px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 393, ../scss/base/sections/careers.scss */
+	  #asc-map-primary-search {
+		display: block;
+	  }
+
+	  /* line 397, ../scss/base/sections/careers.scss */
+	  #jobs-sidebar #map-nav-search i {
+		display: block;
+	  }
+
+	  /* line 401, ../scss/base/sections/careers.scss */
+	  .asc-mobile-search-button {
+		display: none !important;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 408, ../scss/base/sections/careers.scss */
+	  .asc-submenu-list {
+		display: block;
+	  }
+	  /* line 412, ../scss/base/sections/careers.scss */
+	  #submenu-filter {
+		display: none;
+	  }
+	}
+	/* line 421, ../scss/base/sections/careers.scss */
+	#jobs-map {
+	  height: 460px;
+	  border: 24px solid #FFF;
+	  border-left: 19px solid #FFF;
+	  margin-bottom: 18px;
+	  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+	@media (max-width: 767px) {
+	  /* line 421, ../scss/base/sections/careers.scss */
+	  #jobs-map {
+		display: none;
+	  }
+	}
+	/* line 432, ../scss/base/sections/careers.scss */
+	.jvectormap-zoomin, .jvectormap-zoomout {
+	  background: none repeat scroll 0 0 #98CA4A;
+	  transition: background 0.25s ease 0s;
+	  border-radius: 0;
+	  cursor: pointer;
+	  height: 20px;
+	  line-height: 20px;
+	  position: absolute;
+	  left: 96%;
+	  text-align: center;
+	  width: 20px;
+	}
+	/* line 445, ../scss/base/sections/careers.scss */
+	.jvectormap-zoomin {
+	  top: 87%;
+	}
+	/* line 450, ../scss/base/sections/careers.scss */
+	.jvectormap-zoomout {
+	  top: 93%;
+	}
+	/* line 455, ../scss/base/sections/careers.scss */
+	#client-job-menu-system {
+	  background-color: #ebebeb;
+	  padding: 10px 10px;
+	  margin-bottom: 5px;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#client-job-menu-system:before, #client-job-menu-system:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#client-job-menu-system:after {
+	  clear: both;
+	}
+	/* line 462, ../scss/base/sections/careers.scss */
+	#client-job-menu-system div:nth-child(1) {
+	  float: left;
+	}
+	/* line 467, ../scss/base/sections/careers.scss */
+	#client-job-menu-system div:nth-child(2) {
+	  float: right;
+	}
+	/* line 471, ../scss/base/sections/careers.scss */
+	#client-job-menu-system .asc-clear-filters {
+	  float: right;
+	  color: #999;
+	  font-size: .9em;
+	}
+	/* line 483, ../scss/base/sections/careers.scss */
+	#job-listings .listing-results {
+	  padding: 14px 30px;
+	  background: #e5e5e5;
+	  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+	}
+	/* line 487, ../scss/base/sections/careers.scss */
+	#job-listings .listing-results h6 {
+	  margin: 0;
+	}
+	/* line 492, ../scss/base/sections/careers.scss */
+	.asc-job-public-tile {
+	  margin-right: 0;
+	  padding: 16px 10px;
+	}
+	/* line 496, ../scss/base/sections/careers.scss */
+	.asc-job-public-tile .asc-job-public-name a {
+	  font-size: 19px;
+	  color: #08a5e1;
+	  font-weight: 600;
+	}
+	/* line 505, ../scss/base/sections/careers.scss */
+	.asc-job-public-tile .asc-job-public-stats .pub-description {
+	  margin: 0 0 5px;
+	  font-weight: normal;
+	  font-size: 14px;
+	  color: #2b2d31;
+	}
+	/* line 512, ../scss/base/sections/careers.scss */
+	.asc-job-public-tile .asc-job-public-stats p {
+	  margin: 0;
+	}
+	/* line 518, ../scss/base/sections/careers.scss */
+	.asc-end-of-list {
+	  border: none;
+	  padding: 5px 0;
+	  background: none;
+	}
+	/* line 523, ../scss/base/sections/careers.scss */
+	#job-location-text {
+	  border-radius: 0;
+	  color: #555555;
+	  display: inline-block;
+	  font-size: 14px;
+	  height: 36px;
+	  max-width: 100%;
+	  vertical-align: middle;
+	  position: relative;
+	  bottom: 55%;
+	}
+	/* SECTION CAREERS-SINGLE */
+	@media (max-width: 992px) {
+	  /* line 14, ../scss/base/sections/career-single.scss */
+	  ._career-single .col-sm-8 {
+		width: 100%;
+	  }
+	}
+	/* line 20, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar {
+	  padding-left: 5%;
+	}
+	@media (max-width: 992px) {
+	  /* line 20, ../scss/base/sections/career-single.scss */
+	  ._career-single div.asc-position-sidebar {
+		padding-left: 0;
+		margin-left: 5%;
+	  }
+	}
+	/* line 28, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section {
+	  padding: 0 0 20px;
+	}
+	/* line 31, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section p, ._career-single div.asc-position-sidebar section li {
+	  font-size: 14px;
+	}
+	/* line 37, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.contact-manager {
+	  border: 1px solid #cccccc;
+	  border-left: none;
+	  border-right: none;
+	  padding: 20px 0;
+	  margin: 5px 2px 11px 1px;
+	  display: none;
+	}
+	/* line 47, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.position-information h6 {
+	  margin-bottom: 6px;
+	}
+	/* line 48, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.position-information p {
+	  margin: 0 0 2px;
+	}
+	/* line 49, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.position-information li {
+	  font-weight: 300;
+	}
+	/* line 50, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.position-information > div {
+	  margin-bottom: 24px;
+	}
+	/* line 52, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.position-information > div:last-child {
+	  margin-bottom: 0;
+	  display: none;
+	}
+	/* line 57, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.other-positions #asc-recommended-job-header {
+	  color: #08a5e1;
+	  text-transform: uppercase;
+	  font-size: .9em;
+	  border-bottom: 1px solid #cccccc;
+	  padding-bottom: 6px;
+	  line-height: 1em;
+	  margin-bottom: 20px;
+	}
+	/* line 67, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.other-positions a {
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+	/* line 68, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-sidebar section.other-positions span {
+	  font-weight: 300;
+	  font-size: 14px;
+	  position: relative;
+	  top: -4px;
+	}
+	@media (max-width: 767px) {
+	  /* line 78, ../scss/base/sections/career-single.scss */
+	  ._career-single {
+		padding-left: 20px;
+		padding-right: 20px;
+	  }
+	}
+	/* line 85, ../scss/base/sections/career-single.scss */
+	._career-single .asc-job-header {
+	  font-size: 30px;
+	  line-height: 36px;
+	  color: #08a5e1;
+	  margin-bottom: 0px;
+	  display: block;
+	}
+	/* line 93, ../scss/base/sections/career-single.scss */
+	.asc-job-listing-container .asc-job-header.description {
+	  display: none;
+	}
+
+	/* line 98, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-content div.asc-position-title {
+	  margin-bottom: 16px;
+	}
+	/* line 102, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-content .asc-jobs-hr {
+	  display: none;
+	}
+	/* line 104, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-content .asc-job-description {
+	  font-weight: 300;
+	}
+	@media (max-width: 767px) {
+	  /* line 97, ../scss/base/sections/career-single.scss */
+	  ._career-single div.asc-position-content {
+		margin-bottom: 30px;
+	  }
+	}
+	/* line 112, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-position-content #asc-job-apply-btn {
+	  margin: 0;
+	  float: right;
+	  position: inherit;
+	}
+
+	/* line 119, ../scss/base/sections/career-single.scss */
+	.asc-apply-container {
+	  padding: 20px;
+	  background: #e5e5e5;
+	}
+
+	/* line 129, ../scss/base/sections/career-single.scss */
+	.asc-job-listing-container .asc-apply-container {
+	  background: #FFF;
+	}
+	/* line 132, ../scss/base/sections/career-single.scss */
+	.asc-job-listing-container .asc-apply-container h3 {
+	  color: #A4A4B1;
+	}
+	/* line 137, ../scss/base/sections/career-single.scss */
+	.asc-job-listing-container .asc-apply-container .asc-first-step-lower-block p {
+	  color: #A4A4B1;
+	}
+
+	/* line 49, ../scss/base/config/mixins.scss */
+	.asc-apply-now:before, .asc-apply-now:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	.asc-apply-now:after {
+	  clear: both;
+	}
+	/* line 147, ../scss/base/sections/career-single.scss */
+	.asc-apply-now > div {
+	  min-width: 250px;
+	}
+	/* line 148, ../scss/base/sections/career-single.scss */
+	.asc-apply-now .button-applied {
+	  padding-left: 26px;
+	  position: relative;
+	  float: right;
+	}
+	/* line 152, ../scss/base/sections/career-single.scss */
+	.asc-apply-now .button-applied .asc-applied-text {
+	  border: 2px solid #FFFFFF;
+	  border-radius: 20px;
+	  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+	  height: 20px;
+	  line-height: 16px;
+	  position: absolute;
+	  right: 5px;
+	  top: -10px;
+	  width: 20px;
+	  z-index: 7;
+	}
+	/* line 165, ../scss/base/sections/career-single.scss */
+	.asc-apply-now div.asc-withdraw {
+	  float: right;
+	  width: auto !important;
+	  margin: 4px 10px 0 0;
+	  -webkit-transition: color 0.2s;
+	  -moz-transition: color 0.2s;
+	  -o-transition: color 0.2s;
+	  transition: color 0.2s;
+	}
+	/* line 170, ../scss/base/sections/career-single.scss */
+	.asc-apply-now div.asc-withdraw a:hover {
+	  color: #c9533e;
+	}
+	/* line 176, ../scss/base/sections/career-single.scss */
+	.btn-success {
+	  background-color: #5CB85C;
+	  color: #FFFFFF;
+	}
+	/* line 181, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step {
+	  margin: 0 0 30px !important;
+	  background: #e5e5e5 !important;
+	}
+	/* line 184, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey {
+	  padding: 0;
+	  background: none;
+	}
+	/* line 189, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey div.muted,
+	#asc-job-app-second-step #asc-job-application-survey div.muted a {
+	  font-size: 14px;
+	  font-weight: 300;
+	}
+	/* line 192, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey div.muted a {
+	  color: #1d9ff2;
+	}
+	/* line 196, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey #asc-survey-form {
+	  margin: 10px 0 0;
+	}
+	/* line 197, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey .asc-edit-block-header {
+	  padding: 0;
+	  background: none;
+	  margin-bottom: 8px;
+	  border-bottom: none;
+	}
+	/* line 202, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey .asc-edit-block-header h4 {
+	  color: #37393f;
+	  margin-bottom: 0;
+	}
+	/* line 207, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey .asc-edit-block-inner {
+	  padding: 0;
+	}
+	/* line 210, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey .asc-edit-edit {
+	  padding: 0 10px;
+	  background: none !important;
+	  margin: 0 0 10px;
+	  border: none;
+	  font-weight: 300;
+	  font-size: 14px;
+	}
+	/* line 217, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-job-application-survey .asc-edit-edit input {
+	  margin-right: 6px;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#asc-job-app-second-step #asc-button-holder:before, #asc-job-app-second-step #asc-button-holder:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#asc-job-app-second-step #asc-button-holder:after {
+	  clear: both;
+	}
+	/* line 225, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step #asc-button-holder button {
+	  float: right;
+	  margin-left: 10px;
+	}
+	/* line 233, ../scss/base/sections/career-single.scss */
+	#asc-job-listing-container .asc-inline-mini-help {
+	  font-size: 14px;
+	  position: absolute;
+	}
+	/* line 239, ../scss/base/sections/career-single.scss */
+	#asc-job-listing-container
+	#asc-top-buffer-20 {
+	  margin: 25px 0;
+	}
+	/* line 241, ../scss/base/sections/career-single.scss */
+	#asc-job-listing-container
+	#asc-top-buffer-20 .asc-job-data {
+	  display: none;
+	}
+	/* line 249, ../scss/base/sections/career-single.scss */
+	#asc-job-app-second-step
+	#asc-signup-container
+	#asc-profile-picture-button {
+	  font-size: 12px;
+	}
+	/* line 254, ../scss/base/sections/career-single.scss */
+	._career-single #asc-msg {
+	  margin: 0 0 20px;
+	  border-radius: 0;
+	}
+	/* line 257, ../scss/base/sections/career-single.scss */
+	._career-single #asc-msg li {
+	  font-weight: normal;
+	  padding: 5px 10px;
+	}
+	/* line 260, ../scss/base/sections/career-single.scss */
+	._career-single #asc-msg li a {
+	  font-weight: normal;
+	  color: #1d9ff2;
+	}
+	/* line 269, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-apply-confirmation h1 {
+	  margin-bottom: 16px;
+	}
+	/* line 270, ../scss/base/sections/career-single.scss */
+	._career-single div.asc-apply-confirmation p.congrats {
+	  margin-bottom: 40px;
+	}
+	/* SECTION PROFILE/USER */
+	/* line 2, ../scss/base/sections/profile.scss */
+	.asc-navbar {
+	  background-color: #e4e4e4;
+	}
+	/* line 26, ../scss/base/sections/profile.scss */
+	#profile #asc-candidate-expanded-image a#asc-profile-change-picture {
+	  color: #878787;
+	}
+	/* line 31, ../scss/base/sections/profile.scss */
+	#asc-user-image-container {
+	  padding: 20px 0;
+	  width: 100%;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#asc-user-image-container:before, #asc-user-image-container:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#asc-user-image-container:after {
+	  clear: both;
+	}
+	/* line 35, ../scss/base/sections/profile.scss */
+	#asc-user-image-container h3 {
+	  line-height: 1em;
+	}
+	/* line 36, ../scss/base/sections/profile.scss */
+	#asc-user-image-container #asc-profile-picture {
+	  margin: 0;
+	}
+	/* line 37, ../scss/base/sections/profile.scss */
+	#asc-user-image-container #asc-user-upload-image-button {
+	  margin: 0;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#asc-user-image-container #asc-user-upload-image:before, #asc-user-image-container #asc-user-upload-image:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#asc-user-image-container #asc-user-upload-image:after {
+	  clear: both;
+	}
+	/* line 41, ../scss/base/sections/profile.scss */
+	#asc-user-image-container p.small-text {
+	  font-size: .8em;
+	  margin-bottom: 20px;
+	}
+	/* line 42, ../scss/base/sections/profile.scss */
+	#asc-user-image-container .asc-file-upload-holder-outer {
+	  width: 100%;
+	}
+	/* line 50, ../scss/base/sections/profile.scss */
+	#asc-client-record-profile-view .asc-del-cancel {
+	  background: none repeat scroll 0 0 #EDEFF2;
+	  background-image: none;
+	  border-width: 0px;
+	}
+	/* line 57, ../scss/base/sections/profile.scss */
+	#asc-client-record-profile-view .asc-edit-readonly span.asc-edit-icon {
+	  min-width: 70px;
+	  width: auto;
+	  position: absolute;
+	  right: 0;
+	  top: 5px;
+	  padding: 2px 5px;
+	  margin: 0;
+	}
+	/* line 67, ../scss/base/sections/profile.scss */
+	#asc-client-record-profile-view .asc-edit-readonly.communication-options-readonly {
+	  margin-left: 15px;
+	}
+	/* line 69, ../scss/base/sections/profile.scss */
+	#asc-client-record-profile-view .asc-edit-readonly.communication-options-readonly .asc-edit-icon {
+	  top: 25px;
+	}
+	/* line 74, ../scss/base/sections/profile.scss */
+	#asc-client-record-profile-view .asc-profile-top-hr {
+	  display: none;
+	}
+	/* line 78, ../scss/base/sections/profile.scss */
+	#asc-dashboard-rec-jobs .asc-recommended-job-row {
+	  margin-top: 10px;
+	}
+	/* line 82, ../scss/base/sections/profile.scss */
+	#asc-dashboard-rec-jobs .asc-recommended-job-row h5 {
+	  text-transform: uppercase;
+	}
+	@media (max-width: 360px) {
+	  /* line 86, ../scss/base/sections/profile.scss */
+	  .asc-change-image-holder .asc-change-image-btn {
+		position: relative !important;
+		left: 0% !important;
+		width: 80% !important;
+	  }
+	  /* line 92, ../scss/base/sections/profile.scss */
+	  #asc-client-record-profile-view .asc-change-image-holder img {
+		max-width: 100%;
+		position: relative;
+		right: 0px;
+		width: 100%;
+		display: table;
+		font-size: 10px;
+		margin-top: 13px;
+	  }
+	}
+	/* line 108, ../scss/base/sections/profile.scss */
+	#asc-resume-controls .btn {
+	  font-size: 14px;
+	  padding: 2px 5px;
+	}
+	/* SECTION ABOUT-US, STAFF */
+	/* line 5, ../scss/base/sections/about-us.scss */
+	._about-us {
+	  margin-top: 120px;
+	}
+	@media (max-width: 767px) {
+	  /* line 5, ../scss/base/sections/about-us.scss */
+	  ._about-us {
+		margin-top: 30px;
+	  }
+	}
+	/* line 14, ../scss/base/sections/about-us.scss */
+	._about-us section.section {
+	  padding-bottom: 50px;
+	}
+	/* line 19, ../scss/base/sections/about-us.scss */
+	._about-us section.posts {
+	  padding-top: 80px;
+	}
+	@media (max-width: 767px) {
+	  /* line 19, ../scss/base/sections/about-us.scss */
+	  ._about-us section.posts {
+		padding-top: 40px;
+	  }
+	}
+	/* line 25, ../scss/base/sections/about-us.scss */
+	._about-us section.culture {
+	  padding-top: 0;
+	}
+	/* line 35, ../scss/base/sections/about-us.scss */
+	#articleinfo .asc-post-content ul {
+	  list-style-type: disc;
+	  padding-left: 15px;
+	}
+	/* line 43, ../scss/base/sections/about-us.scss */
+	article.locations div.map-container div.map-wrap div.map-image {
+	  position: relative;
+	}
+	/* line 48, ../scss/base/sections/about-us.scss */
+	#play-btn-img1 {
+	  color: rgba(255, 255, 255, 0.6);
+	  font-size: 180px;
+	  left: 50%;
+	  margin: -90px 0 0 -77px;
+	  position: absolute;
+	  top: 50%;
+	  transition: color 0.25s ease 0.05s;
+	  z-index: 201;
+	  text-decoration: none !important;
+	}
+	/* line 61, ../scss/base/sections/about-us.scss */
+	#play-btn-img2 {
+	  color: rgba(255, 255, 255, 0.6);
+	  font-size: 180px;
+	  left: 50%;
+	  margin: -90px 0 0 -77px;
+	  position: absolute;
+	  top: 50%;
+	  transition: color 0.25s ease 0.05s;
+	  z-index: 201;
+	  text-decoration: none !important;
+	}
+	@media (max-width: 767px) {
+	  /* line 6, ../scss/base/sections/staff.scss */
+	  ._staff > .container {
+		padding: 0 20px;
+	  }
+	}
+	/* line 14, ../scss/base/sections/staff.scss */
+	._staff .asc-staff-header {
+	  height: 360px;
+	  margin: 0 0 50px;
+	  position: relative;
+	  background-image: url("/img/team/team-banner.jpg");
+	  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg") no-repeat;
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.8))), url("/img/team/team-banner.jpg") no-repeat;
+	  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg") no-repeat;
+	  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg") no-repeat;
+	  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg") no-repeat;
+	  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg") no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	/* line 24, ../scss/base/sections/staff.scss */
+	._staff #staff-title {
+	  position: absolute;
+	  bottom: 0;
+	  text-align: center;
+	  width: 74%;
+	  margin: 20px 0 0;
+	  left: 50%;
+	  margin-left: -37%;
+	}
+	/* line 32, ../scss/base/sections/staff.scss */
+	._staff #staff-title h5 {
+	  color: white;
+	  border-bottom-color: white;
+	  max-width: 200px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	/* line 39, ../scss/base/sections/staff.scss */
+	._staff #staff-title p {
+	  margin-bottom: 40px;
+	  color: white;
+	}
+	@media (max-width: 767px) {
+	  /* line 45, ../scss/base/sections/staff.scss */
+	  ._staff #staff-title p {
+		font-size: 30px;
+		line-height: 33px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 24, ../scss/base/sections/staff.scss */
+	  ._staff #staff-title {
+		width: 90%;
+		margin-left: -45%;
+	  }
+	  /* line 54, ../scss/base/sections/staff.scss */
+	  ._staff #staff-title p {
+		font-size: 24px;
+		line-height: 26px;
+	  }
+	}
+	/* line 61, ../scss/base/sections/staff.scss */
+	._staff #employee_slider {
+	  padding-bottom: 60px;
+	  border-bottom: 1px solid #cccccc;
+	}
+	/* SECTION AUTH, SIGNUP, ERROR */
+	/* line 7, ../scss/base/sections/auth.scss */
+	#asc-signin-btn {
+	  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	  border: 1px solid #08a5e1;
+	  color: #08a5e1;
+	}
+	/* line 12, ../scss/base/sections/auth.scss */
+	div.input-icon input {
+	  border-bottom-right-radius: 1px;
+	}
+	/* line 17, ../scss/base/sections/auth.scss */
+	.asc-create-account-option {
+	  max-width: 640px;
+	  margin-top: 30px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	/* line 23, ../scss/base/sections/auth.scss */
+	.asc-create-account-option #asc-init-signin {
+	  margin: 0;
+	  text-align: center;
+	}
+	/* line 28, ../scss/base/sections/auth.scss */
+	.asc-create-account-option #asc-init-signin p {
+	  font-size: 28px;
+	  line-height: 36px;
+	  font-weight: 200;
+	  margin-bottom: 20px;
+	  font-style: normal;
+	}
+	@media (max-width: 568px) {
+	  /* line 28, ../scss/base/sections/auth.scss */
+	  .asc-create-account-option #asc-init-signin p {
+		font-size: 18px;
+		line-height: 26px;
+	  }
+	}
+	/* line 41, ../scss/base/sections/auth.scss */
+	.asc-create-account-option #asc-init-signin a {
+	  text-decoration: none;
+	  color: white;
+	}
+	/* line 45, ../scss/base/sections/auth.scss */
+	.asc-create-account-option div.button-wrap {
+	  text-align: center;
+	  margin: 20px 0;
+	}
+	@media (max-width: 767px) {
+	  /* line 53, ../scss/base/sections/auth.scss */
+	  #signindiv {
+		margin-left: 20px;
+		margin-right: 20px;
+	  }
+	  /* line 55, ../scss/base/sections/auth.scss */
+	  #signindiv .asc-signin-data-container {
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	}
+	/* line 64, ../scss/base/sections/auth.scss */
+	#forgot_password .asc-signin-data-container {
+	  background: white;
+	  padding: 10px 20px 20px;
+	}
+	/* line 68, ../scss/base/sections/auth.scss */
+	#forgot_password #asc-signup-top-header {
+	  background: none;
+	  border: none;
+	  margin: 0;
+	}
+	/* line 73, ../scss/base/sections/auth.scss */
+	#forgot_password #asc-signup-top-header h4 {
+	  color: #08a5e1;
+	  text-transform: uppercase;
+	  font-size: .9em;
+	  margin: 0;
+	  border-bottom: 1px solid #cccccc;
+	  padding-bottom: 6px;
+	  margin-bottom: 10px;
+	  font-weight: bolder;
+	}
+	/* line 86, ../scss/base/sections/auth.scss */
+	#forgot_password #asc_form_forgotpassword input {
+	  border: 1px solid #cccccc;
+	}
+	/* line 91, ../scss/base/sections/auth.scss */
+	#forgot_password #asc-signup-footer {
+	  margin: 0;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#forgot_password #asc-signup-footer:before, #forgot_password #asc-signup-footer:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#forgot_password #asc-signup-footer:after {
+	  clear: both;
+	}
+	/* line 105, ../scss/base/sections/auth.scss */
+	#change_password .asc-signin-data-container {
+	  background: white;
+	  padding: 10px 20px 20px;
+	}
+	/* line 111, ../scss/base/sections/auth.scss */
+	#change_password #asc-signup-top-header {
+	  background: none;
+	  border: none;
+	  margin: 0;
+	}
+	/* line 117, ../scss/base/sections/auth.scss */
+	#change_password #asc-signup-top-header h4 {
+	  color: #08a5e1;
+	  text-transform: uppercase;
+	  font-size: .9em;
+	  margin: 0;
+	  border-bottom: 1px solid #cccccc;
+	  padding-bottom: 6px;
+	  margin-bottom: 10px;
+	  font-weight: bolder;
+	}
+	/* line 132, ../scss/base/sections/auth.scss */
+	#change_password #asc_form_change_password input {
+	  border: 1px solid #cccccc;
+	  width: 100%;
+	}
+	/* line 137, ../scss/base/sections/auth.scss */
+	#change_password #asc_form_change_password input:last-of-type {
+	  margin-top: 10px;
+	}
+	/* line 143, ../scss/base/sections/auth.scss */
+	#change_password #asc-signup-footer {
+	  margin: 0;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	#change_password #asc-signup-footer:before, #change_password #asc-signup-footer:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	#change_password #asc-signup-footer:after {
+	  clear: both;
+	}
+	/* line 3, ../scss/base/sections/signup.scss */
+	#asc-signup-container label {
+	  color: #878787;
+	}
+	/* line 7, ../scss/base/sections/signup.scss */
+	#asc-signup-container .asc-signup-picture-btn {
+	  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	  color: #08a5e1;
+	  border: 1px solid #08a5e1;
+	}
+	/* line 13, ../scss/base/sections/signup.scss */
+	#asc-signup-container .asc-edit-edit {
+	  padding: 10px 10px;
+	  margin-left: 8px;
+	}
+	/* line 17, ../scss/base/sections/signup.scss */
+	#asc-signup-container .intl-tel-input .flag-dropdown {
+	  height: 33px;
+	}
+	@media (max-width: 568px) {
+	  /* line 20, ../scss/base/sections/signup.scss */
+	  #asc-signup-container #asc-alt-upload-resume {
+		display: none;
+	  }
+	}
+	/* line 28, ../scss/base/sections/signup.scss */
+	#asc-application-requirements {
+	  font-size: 12px;
+	  line-height: 14px;
+	  width: 35%;
+	  padding: 8px;
+	  margin: 0 auto;
+	}
+	/* line 36, ../scss/base/sections/signup.scss */
+	#asc-signup-container textarea {
+	  position: relative;
+	  z-index: 1;
+	}
+	/* line 41, ../scss/base/sections/signup.scss */
+	.p-caption {
+	  text-align: center;
+	  white-space: nowrap;
+	  margin-top: 0px;
+	}
+	/* line 46, ../scss/base/sections/signup.scss */
+	.asc-signin {
+	  font-size: 14px;
+	  color: #08a5e1;
+	}
+	/* line 50, ../scss/base/sections/signup.scss */
+	.btn.btn-block {
+	  display: inline-block;
+	}
+	/* line 55, ../scss/base/sections/signup.scss */
+	.asc-dynamic-picklist {
+	  background: none;
+	  line-height: 25px;
+	}
+	/* line 59, ../scss/base/sections/signup.scss */
+	#unsubscribe-all {
+	  cursor: pointer;
+	  font-size: 14px;
+	}
+	/* line 64, ../scss/base/sections/signup.scss */
+	.asc-disclosure {
+	  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 14px;
+	  font-weight: 300;
+	}
+	/* line 68, ../scss/base/sections/signup.scss */
+	.asc-disclosure div:nth-child(2) {
+	  font-weight: 300;
+	}
+	/* line 73, ../scss/base/sections/signup.scss */
+	#asc-other-info .communication-preferences .communication-options-row {
+	  margin-right: -5px;
+	  margin-left: 0px;
+	}
+	/* line 78, ../scss/base/sections/signup.scss */
+	#asc-signup-container .asc-info-form > div {
+	  padding: 0px;
+	}
+	/* line 8, ../scss/base/sections/errors.scss */
+	#asc-404 {
+	  max-width: 500px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	/* line 12, ../scss/base/sections/errors.scss */
+	#asc-404 h1 {
+	  font-size: 140px;
+	  line-height: 1em;
+	  font-weight: 200;
+	}
+	/* line 17, ../scss/base/sections/errors.scss */
+	#asc-404 p {
+	  margin-bottom: 30px;
+	}
+	/* SECTION INFO */
+	/* line 6, ../scss/base/sections/info.scss */
+	.asc-info-page {
+	  max-width: 650px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 0 20px;
+	}
+	/* line 12, ../scss/base/sections/info.scss */
+	.asc-info-page h2 {
+	  color: #08a5e1;
+	  font-size: 30px;
+	  line-height: 1em;
+	  margin-bottom: 25px;
+	}
+	/* SECTION JOB */
+	@media (max-width: 1200px) {
+	  /* line 2, ../scss/base/sections/job.scss */
+	  #client-position-content {
+		float: none;
+		width: 100%;
+	  }
+	}
+	@media (max-width: 1200px) {
+	  /* line 11, ../scss/base/sections/job.scss */
+	  client-position-sidebar {
+		float: none;
+		width: 100;
+	  }
+	}
+	/* line 24, ../scss/base/sections/job.scss */
+	#asc-public-profile-bottom-right .position a {
+	  text-decoration: none;
+	}
+	/* line 31, ../scss/base/sections/job.scss */
+	.jvectormap-label {
+	  z-index: 1031;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- FONT FACES  ----------------------------- */
+
+	/** For specific client changes only, always ignored by git **/
+	/* CSS that will override all defaults and will not be overwritten by git */
+	@CHARSET "ISO-8859-1";
+	/* FONTS */
+	@font-face {
+	  font-family: 'GEInspiraMediumRegular';
+	  src: url("/fonts/geinspmd.eot");
+	  src: url("/fonts/geinspmd.eot") format("embedded-opentype"), url("/fonts/geinspmd.woff") format("woff"), url("/fonts/geinspmd.ttf") format("truetype"), url("/fonts/geinspmd.svg#GEInspiraMediumRegular") format("svg");
+	}
+
+	@font-face {
+	  font-family: 'GEInspira';
+	  src: url("/fonts/GEInspira.eot?#iefix") format("embedded-opentype"), url("/fonts/GEInspira.woff") format("woff"), url("/fonts/GEInspira.ttf") format("truetype"), url("/fonts/GEInspira.svg#GEInspira") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'GEInspiraBold';
+	  src: url("/fonts/geinspbold.eot?#iefix") format("embedded-opentype"), url("/fonts/geinspbold.woff") format("woff"), url("/fonts/geinspbold.ttf") format("truetype"), url("/fonts/geinspbold.svg#GEInspira") format("svg");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- BASE TALENTCOMMUNITY  ------------------------ */
+
+	/* line 35, ../scss/base/talentcommunity.scss */
+	body, h1, h2, h3, h4, h5, h6 {
+	  font-family: GEInspiraMediumRegular,Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	}
+
+	/* line 38, ../scss/base/talentcommunity.scss */
+	a.btn {
+	  text-decoration: none;
+	}
+
+	/* line 41, ../scss/base/talentcommunity.scss */
+	h1, h2, h3, h4, h5, h6 {
+	  font-weight: 500;
+	}
+
+	/* line 44, ../scss/base/talentcommunity.scss */
+	h2.p-quote, p.p-quote {
+	  font-size: 30px;
+	  font-weight: 200;
+	  line-height: 38px;
+	}
+	/* line 48, ../scss/base/talentcommunity.scss */
+	h2.p-quote a, p.p-quote a {
+	  font-size: 30px;
+	}
+
+	/* line 52, ../scss/base/talentcommunity.scss */
+	h5 {
+	  font-size: 1em;
+	}
+
+	/* line 55, ../scss/base/talentcommunity.scss */
+	.pull-quote {
+	  text-align: center;
+	}
+	/* line 57, ../scss/base/talentcommunity.scss */
+	.pull-quote h2, .pull-quote p {
+	  margin-bottom: 40px;
+	}
+ 
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- NAVBAR STYLES ----------------------------- */
+
+	/* line 6, ../scss/base/sections/header.scss */
+	nav#main-nav {
+	  position: fixed;
+	  height: 90px;
+	  margin: 0;	
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  background: rgba(255, 255, 255, 0.96);
+	  border: none;
+	  border-radius: 0;
+	  -webkit-transition: height 0.5s, background 0.5s, box-shadow 0.5s;
+	  -moz-transition: height 0.5s, background 0.5s, box-shadow 0.5s;
+	  -o-transition: height 0.5s, background 0.5s, box-shadow 0.5s;
+	  transition: height 0.5s, background 0.5s, box-shadow 0.5s;  
+	}
+	/* line 29, ../scss/base/sections/header.scss */
+	nav#main-nav .navbar-inner {
+	  height: 100%;				
+	}
+	/* line 78, ../scss/base/sections/header.scss */
+	nav#main-nav .container {  
+		height: 100%;			
+		padding: 0;			
+	}
+	nav#main-nav .navbar-header {
+		height: 100%;	
+	}								
+	/* line 43, ../scss/base/sections/header.scss */
+	nav#main-nav li a {
+	  text-decoration: none;
+	}
+	/* line 83, ../scss/base/sections/header.scss */
+	nav#main-nav a.brand {  
+	  font-size: 20px;
+	  text-decoration: none;
+	  line-height: 2.6em;
+	  display: block;	
+	  height: 100%;				
+	  margin: 0;			
+	  padding: 13px 20px; 
+	}
+	/* line 888, ../scss/base/talentcommunity.scss */
+	nav#main-nav a.brand img {
+	  height: 56px;
+	}
+	/* line 891, ../scss/base/talentcommunity.scss */
+	nav#main-nav a.brand img.tagline {
+	  height: 16px;
+	}	
+	/* line 119, ../scss/base/sections/header.scss */
+	nav#main-nav .navbar-nav li > a {
+	  font-size: 16px;
+	  line-height: 1em;
+	  color: #2b2d31;
+	  text-shadow: none;
+	  padding: 10px 15px;
+	  border-radius: 0;        
+	}
+	/* line 127, ../scss/base/sections/header.scss */
+	nav#main-nav .navbar-nav li > a.btn {
+	  font-size: 14px;
+	  color: #08a5e1;
+	  display: block;  	
+	  margin: 0;  			
+	  padding: 6px 12px;  
+	}
+	/* line 188, ../scss/base/talentcommunity.scss */
+	nav#main-nav .navbar-nav li > a:hover {
+	  color: #08a5e1;
+	  background-color: #eee;	
+	  box-shadow: 2px 2px #ddd;	
+	}
+	nav#main-nav .navbar-nav .signin-element > a:hover { 	
+		color: #08a5e1;			
+		background-color: rgba(255, 255, 255, 0.96);
+	}				
+	/* line 157, ../scss/base/sections/header.scss */
+	#main-nav .navbar-collapse.in,
+	#main-nav .navbar-collapse.collapsing {
+	  background: rgba(255, 255, 255, 0.96);
+	}
+	/* line 66, ../scss/base/sections/header.scss */
+	body.scrolled-down nav#main-nav {
+	  background: white;
+	  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.15);
+	}
+	/* SET NAV MENU-COLLAPSE AT 1100px WIDTH */
+	@media (min-width: 1102px) { 
+		#main-nav .navbar-collapse {
+		  margin-top: 25px;
+		}
+		#main-nav .navbar-collapse.in, 
+		#main-nav .navbar-collapse.collapsing {	  
+		  background: none;
+		}
+		nav#main-nav .pull-right .signin-element {
+			margin: 4px;
+		}
+		/* line 161, ../scss/base/sections/header.scss */
+		#main-nav .navbar-collapse .signin-element a.btn {
+		  width: 200px;		
+		}	
+	}
+	@media (max-width: 1102px) {  
+	  /* line 245, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .container {
+		width: 100%;
+	  }     
+	  /* line 206, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-header {
+		width: 100%;
+	  }
+	  /* line 208, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-header .nav-signin {
+		float: right;
+		margin: 25px 15px 0 0;
+	  }
+		/* line 274, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-toggle {
+		display: inherit !important;
+		border: none;
+		margin-top: 25px;
+	  }
+	  /* line 277, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-toggle:hover, 
+	  nav#main-nav .navbar-toggle:focus {
+		background-color: transparent;
+	  }
+	  /* line 283, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-toggle .icon-bar {
+		height: 3px;
+	  }
+	  /* line 279, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-toggle:hover .icon-bar {
+		background-color: #08a5e1; 
+	  }
+	  /* line 250, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-collapse {
+		margin: 0;
+		padding-bottom: 20px;
+		border-top: none;
+		overflow-x: hidden;
+	  }
+		/* line 250, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-collapse.collapse {	 
+		display: none !important;
+	  }
+	  /* line 271, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-collapse .pull-right {
+		width: 100% !important;
+		margin: 0;
+		}
+	  /* line 238, ../scss/base/talentcommunity.scss */
+	  nav#main-nav .navbar-nav > li {
+		float: none;
+		}  
+	}
+	@media (max-width: 320px) {
+	  /* line 158, ../scss/base/talentcommunity.scss */
+	  nav#main-nav a.brand img {
+		height: 32px;
+	  }
+	  /* line 161, ../scss/base/talentcommunity.scss */
+	  nav#main-nav a.brand .tagline {
+		height: 12px;
+	  }
+	}
+
+
+	/* line 101, ../scss/base/sections/header.scss */
+	nav#main-nav a.brand span.careers {
+	  margin-left: 5px;
+	  font-weight: 300;
+	  vertical-align: -3px;
+	  color: #2b2d31;
+	}						
+	/* line 106, ../scss/base/sections/header.scss */
+	nav#main-nav a.brand span.careers span.pipe {
+	  position: relative;
+	  top: -2px;
+	  color: #43454d;
+	}
+	/* line 234, ../scss/base/talentcommunity.scss */
+	.navbar-collapse.in #asc-settings-menu {
+		margin-left: 10px;
+	}
+	/* line 262, ../scss/base/talentcommunity.scss */
+	#main-nav #asc-settings-menu #asc-header-user-menu {
+		color: #fff;
+		margin: 0;
+		left: initial;
+		left: 0;
+	} 
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- MAIN STYLES ----------------------------- */
+
+	/* line 293, ../scss/base/talentcommunity.scss */
+	article.locations div.map-container h5 {
+	  color: #08A5E1;
+	}
+	/* line 298, ../scss/base/talentcommunity.scss */
+	article.locations div.map-container.leadership-program p {
+	  min-height: 220px;
+	}
+
+	/* line 304, ../scss/base/talentcommunity.scss */
+	article.video .video-wrap {
+	  max-height: none;
+	}
+
+	@media (max-width: 1200px) {
+	  /* line 309, ../scss/base/talentcommunity.scss */
+	  body[data-device-type="tablet"] div#background-image, body[data-device-type="mobile"] div#background-image {
+		position: relative !important;
+	  }
+	}
+
+	/* line 319, ../scss/base/talentcommunity.scss */
+	section.section {
+	  padding: 60px 0 70px;
+	}
+
+	/* line 322, ../scss/base/talentcommunity.scss */
+	section.section.post-banner {
+	  height: 435px;
+	}
+
+	/* line 326, ../scss/base/talentcommunity.scss */
+	section.section.posts.with-banner div.asc-post-side-nav {
+	  margin-top: -100px;
+	}
+
+	/* line 332, ../scss/base/talentcommunity.scss */
+	._landing > .content div.content-panels {
+	  margin-top: -20px;
+	}
+	/* line 334, ../scss/base/talentcommunity.scss */
+	._landing > .content div.content-panels .panel-image {
+	  background-position: top center;
+	  height: 203px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 332, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels {
+		margin-top: 0;
+	  }
+	  /* line 340, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels .panel-image {
+		height: 172px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 346, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels > div {
+		width: inherit;
+	  }
+	  /* line 349, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels > div:nth-child(n+2) {
+		margin-left: inherit;
+	  }
+	  /* line 352, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels .asc-panel {
+		margin-bottom: 30px;
+	  }
+	  /* line 355, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels .panel-image {
+		height: 350px;
+	  }
+	}
+
+	@media (max-width: 568px) {
+	  /* line 364, ../scss/base/talentcommunity.scss */
+	  ._landing > .content div.content-panels .panel-image {
+		height: 250px;
+	  }
+	}
+	/* line 369, ../scss/base/talentcommunity.scss */
+	._landing > .content .page-content {
+	  margin-top: 0;
+	}
+	/* line 373, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap {
+	  *height: 465px;
+	}
+	@media (max-width: 992px) {
+	  /* line 375, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap.team {
+		height: 278px;
+		margin-top: -2em;
+	  }
+	}
+	/* line 384, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls a {
+	  margin: 5px 15px; 
+	}
+	/* line 387, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.fellows {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  padding: 25px;
+	}
+	/* line 390, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.fellows h1 {
+	  font-size: 42px;
+	  margin-bottom: 5px;
+	}
+	@media (max-width: 568px) {
+	  /* line 390, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.fellows h1 {
+		font-size: 25px;
+	  }
+	}
+	/* line 397, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.fellows p {
+	  color: white;
+	  font-size: 30px;
+	  margin-bottom: 25px;
+	}
+	@media (max-width: 568px) {
+	  /* line 397, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.fellows p {
+		font-size: 17px;
+	  }
+	}
+	/* line 406, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity, ._landing > .hero-wrap .hero-controls.university, ._landing > .hero-wrap .hero-controls.globalresearch {
+	  bottom: 0;
+	  left: inherit;
+	  max-width: 700px;
+	  padding: 30px;
+	  position: relative;
+	  right: inherit;
+	  text-align: left;
+	  width: auto;
+	}
+	@media (max-width: 992px) {
+	  /* line 406, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.diversity, ._landing > .hero-wrap .hero-controls.university, ._landing > .hero-wrap .hero-controls.globalresearch {
+		background-color: rgba(0, 0, 0, 0.5);
+		margin: 15px 0 0 10px;
+		padding: 25px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 406, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.diversity, ._landing > .hero-wrap .hero-controls.university, ._landing > .hero-wrap .hero-controls.globalresearch {
+		margin: 30px 0 0 10px;
+	  }
+	}
+	/* line 423, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity h1, ._landing > .hero-wrap .hero-controls.university h1, ._landing > .hero-wrap .hero-controls.globalresearch h1 {
+	  font-weight: 300;
+	  line-height: 45px;
+	}
+	/* line 427, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity p, ._landing > .hero-wrap .hero-controls.university p, ._landing > .hero-wrap .hero-controls.globalresearch p {
+	  color: white;
+	}
+	/* line 431, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity {
+	  margin: 90px 0 0 0;
+	}
+	/* line 433, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity h1 {
+	  font-size: 40px;
+	  margin-bottom: 10px;
+	}
+	/* line 437, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.diversity p {
+	  font-size: 18px;
+	}
+	/* line 441, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.globalresearch {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  margin: 180px 0 0 0;
+	}
+	/* line 444, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.globalresearch h1 {
+	  font-size: 42px;
+	  margin-bottom: 25px;
+	}
+	@media (max-width: 992px) {
+	  /* line 441, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.globalresearch {
+		margin: 1em 0 0 0;
+	  }
+	  /* line 450, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.globalresearch .btn-lg {
+		padding: 12px 7px;
+		font-size: 14px;
+	  }
+	}
+	/* line 456, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.university {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  margin: 150px 0 0 0;
+	}
+	/* line 459, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.university h1 {
+	  font-size: 42px;
+	  margin-bottom: 25px;
+	}
+	/* line 463, ../scss/base/talentcommunity.scss */
+	._landing > .hero-wrap .hero-controls.university p {
+	  font-size: 20px;
+	  margin-bottom: 15px;
+	}
+	@media (max-width: 992px) {
+	  /* line 456, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.university {
+		margin: 1em 0 0 0;
+	  }
+	  /* line 469, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.university h1 {
+		font-size: 1.5em;
+		line-height: 1.2em;
+	  }
+	  /* line 473, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.university p {
+		font-size: 1em;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 478, ../scss/base/talentcommunity.scss */
+	  ._landing > .hero-wrap .hero-controls.university .btn-lg {
+		padding: 12px 8px;
+	  }
+	}
+	.hero-wrap .hero-controls iframe#GEDigital {
+		width: 100%;
+	}
+
+	/* line 485, ../scss/base/talentcommunity.scss */
+	._about-us {
+	  margin-top: 150px;
+	}
+	@media (max-width: 767px) {
+	  /* line 485, ../scss/base/talentcommunity.scss */
+	  ._about-us {
+		margin-top: 1em;
+	  }
+	}
+	/* line 490, ../scss/base/talentcommunity.scss */
+	._about-us article.leadership {
+	  background-color: #fff;
+	  border-radius: 8px;
+	  margin-bottom: 50px;
+	  min-height: 400px;
+	  padding-left: 30px;
+	}
+	@media (max-width: 992px) {
+	  /* line 497, ../scss/base/talentcommunity.scss */
+	  ._about-us article.leadership .pull-right {
+		float: none !important;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 502, ../scss/base/talentcommunity.scss */
+	  ._about-us article.leadership .summary p {
+		font-size: 1em;
+	  }
+	}
+	/* line 507, ../scss/base/talentcommunity.scss */
+	._about-us h1 {
+	  font-size: 17px;
+	  text-transform: none;
+	}
+	/* line 511, ../scss/base/talentcommunity.scss */
+	._about-us h1.hr {
+	  width: 250px;
+	  margin: 0 auto 20px;
+	}
+	/* line 515, ../scss/base/talentcommunity.scss */
+	._about-us h3 {
+	  margin-top: 25px;
+	}
+	/* line 518, ../scss/base/talentcommunity.scss */
+	._about-us .carousel {
+	  margin-bottom: 30px;
+	}
+	/* line 522, ../scss/base/talentcommunity.scss */
+	._about-us > .content h5.hr {
+	  margin: 0 auto 10px;
+	  max-width: 200px;
+	  text-align: center;
+	}
+	/* line 527, ../scss/base/talentcommunity.scss */
+	._about-us > .content .asc-panel {
+	  margin-bottom: 30px;
+	  padding: 0;
+	}
+	/* line 531, ../scss/base/talentcommunity.scss */
+	._about-us > .content .panel-bottom {
+	  min-height: 285px;
+	  padding: 25px 20px 20px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 531, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-bottom {
+		min-height: 345px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 531, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-bottom {
+		min-height: 285px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 531, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-bottom {
+		min-height: 100px;
+	  }
+	}
+	/* line 544, ../scss/base/talentcommunity.scss */
+	._about-us > .content .panel-bottom.university p {
+	  min-height: 9em;
+	}
+	/* line 547, ../scss/base/talentcommunity.scss */
+	._about-us > .content .panel-bottom.university .lm {
+	  margin-top: 1em;
+	}
+	/* line 552, ../scss/base/talentcommunity.scss */
+	._about-us > .content .panel-image {
+	  background-position: center top;
+	  background-size: cover;
+	  height: 325px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 556, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-image#volunteerism {
+		background-position: 22% top;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 556, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-image#volunteerism {
+		background-position: center top;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 552, ../scss/base/talentcommunity.scss */
+	  ._about-us > .content .panel-image {
+		height: 210px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	  }
+	}
+	/* line 572, ../scss/base/talentcommunity.scss */
+	._about-us .map-container.city h3 {
+	  font-size: 0.9em;
+	  margin-bottom: 8px;
+	  margin-top: 0;
+	}
+	/* line 579, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading {
+	  background-color: #08a5e1;
+	  color: #fff;
+	}
+	/* line 582, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading .panel-title {
+	  padding: 5px 15px;
+	}
+	/* line 584, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading .panel-title > a {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  text-decoration: none;
+	}
+	/* line 588, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading .panel-title > a:hover {
+	  color: #fff;
+	  text-decoration: underline;
+	}
+	/* line 596, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading + .panel-collapse .panel-body {
+	  padding: 15px 15px 10px;
+	}
+	/* line 598, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading + .panel-collapse .panel-body ul {
+	  list-style: disc;
+	  margin: 11px 0 8px;
+	}
+	/* line 602, ../scss/base/talentcommunity.scss */
+	._about-us .panel-default > .panel-heading + .panel-collapse .panel-body li {
+	  padding-bottom: 10px;
+	}
+	/* line 608, ../scss/base/talentcommunity.scss */
+	._about-us .programs {
+	  color: #666;
+	  margin-top: 25px;
+	  margin-right: 25px;
+	}
+	/* line 612, ../scss/base/talentcommunity.scss */
+	._about-us .programs a {
+	  margin-bottom: 25px;
+	}
+	/* line 615, ../scss/base/talentcommunity.scss */
+	._about-us .programs h3 {
+	  color: #333;
+	  font-size: 18px;
+	  font-weight: bold;
+	}
+	/* line 620, ../scss/base/talentcommunity.scss */
+	._about-us .programs img {
+	  border-radius: 4px;
+	  margin: 0 15px 10px 0;
+	}
+	/* line 624, ../scss/base/talentcommunity.scss */
+	._about-us .programs ul {
+	  list-style: disc;
+	}
+	/* line 628, ../scss/base/talentcommunity.scss */
+	._about-us .pull-quote.awards {
+	  margin-top: 40px;
+	}
+	/* line 631, ../scss/base/talentcommunity.scss */
+	._about-us .summary {
+	  color: #fff;
+	  background-position: right;
+	  background-size: cover;
+	  border-radius: 8px;
+	  margin-bottom: -10px;
+	  margin-left: -30px;
+	  min-height: 400px;
+	  overflow: hidden;
+	  position: relative;
+	}
+	/* line 641, ../scss/base/talentcommunity.scss */
+	._about-us .summary.sales {
+	  height: 417px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 641, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary.sales {
+		height: 528px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 641, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary.sales {
+		height: 400px;
+	  }
+	}
+	/* line 649, ../scss/base/talentcommunity.scss */
+	._about-us .summary.sales .indicator {
+	  margin-top: 219px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 649, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary.sales .indicator {
+		margin-top: 273px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 649, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary.sales .indicator {
+		margin-top: 150px;
+	  }
+	}
+	/* line 659, ../scss/base/talentcommunity.scss */
+	._about-us .summary blockquote {
+	  margin: 0 0 20px 28px;
+	  padding: 10px 10px 10px 5px;
+	}
+	/* line 663, ../scss/base/talentcommunity.scss */
+	._about-us .summary blockquote.fellows {
+	  padding: 10px 20px 10px 5px;
+	  position: absolute;
+	  bottom: 0;
+	}
+	/* line 667, ../scss/base/talentcommunity.scss */
+	._about-us .summary blockquote.fellows img {
+	  margin-bottom: 10px;
+	}
+	/* line 671, ../scss/base/talentcommunity.scss */
+	._about-us .summary h2 {
+	  color: #fff;
+	  font-size: 36px;
+	  padding: 25px 25px 0;
+	}
+	/* line 676, ../scss/base/talentcommunity.scss */
+	._about-us .summary p {
+	  font-size: 18px;
+	  font-style: italic;
+	  padding: 0 25px;
+	}
+	/* line 681, ../scss/base/talentcommunity.scss */
+	._about-us .summary .indicator {
+	  bottom: 0;
+	  display: block;
+	  font-size: 80px;
+	  margin-top: 150px;
+	  text-align: center;
+	  opacity: 1;
+	  visibility: visible;
+	  transition: visibility .2s, opacity .2s linear;
+	}
+	@media (max-width: 568px) {
+	  /* line 681, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary .indicator {
+		visibility: hidden;
+	  }
+	}
+	/* line 694, ../scss/base/talentcommunity.scss */
+	._about-us .summary .title, ._about-us .summary .title-box {
+	  display: table;
+	  position: absolute;
+	  width: 100%;
+	}
+	/* line 699, ../scss/base/talentcommunity.scss */
+	._about-us .summary .title-box {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  min-height: 400px;
+	  padding-bottom: 25px;
+	}
+	/* line 704, ../scss/base/talentcommunity.scss */
+	._about-us .summary .veil {
+	  bottom: -350px;
+	  position: absolute;
+	  width: 100%;
+	  transition: bottom .2s ease-out;
+	}
+	@media (max-width: 568px) {
+	  /* line 704, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary .veil {
+		transition: none;
+		bottom: 0;
+	  }
+	}
+	/* line 713, ../scss/base/talentcommunity.scss */
+	._about-us .summary .veil p.box {
+	  background-color: rgba(0, 0, 0, 0.3);
+	  border-radius: 8px;
+	  font-family: 'GEInspira';
+	  font-size: 16px;
+	  font-weight: 100;
+	  line-height: 1.5em;
+	  margin-top: 40px;
+	  min-height: 255px;
+	  padding: 25px;
+	  font-style: normal;
+	}
+	@media (max-width: 568px) {
+	  /* line 713, ../scss/base/talentcommunity.scss */
+	  ._about-us .summary .veil p.box {
+		font-size: 13px;
+		min-height: 208px;
+		padding: 6px;
+	  }
+	}
+	/* line 732, ../scss/base/talentcommunity.scss */
+	._about-us .summary:hover .veil {
+	  bottom: -10px;
+	  transition: bottom .2s ease-out;
+	}
+	/* line 736, ../scss/base/talentcommunity.scss */
+	._about-us .summary:hover .indicator {
+	  opacity: 0;
+	  visibility: hidden;
+	  transition: visibility .2s, opacity .2s linear;
+	}
+	/* line 744, ../scss/base/talentcommunity.scss */
+	._about-us .text-content h2.hr {
+	  margin: 0 0 20px 0;
+	}
+
+	/* line 749, ../scss/base/talentcommunity.scss */
+	.asc-applied-text {
+	  display: none;
+	}
+
+	/* line 754, ../scss/base/talentcommunity.scss */
+	.asc-articles-info .post-list .asc-call-to-action {
+	  margin-top: 20px;
+	}
+
+	/* line 760, ../scss/base/talentcommunity.scss */
+	.asc-join-community h2 {
+	  color: #08a5e1;
+	  font-size: 19px;
+	}
+	/* line 764, ../scss/base/talentcommunity.scss */
+	.asc-join-community > div {
+	  margin-right: 10px;
+	}
+
+	/* line 769, ../scss/base/talentcommunity.scss */
+	.content-panels ul {
+	  list-style: disc;
+	  padding-left: 20px;
+	}
+	/* line 774, ../scss/base/talentcommunity.scss */
+	.content-panels .asc-panel p {
+	  height: 123px;
+	}
+	/* line 777, ../scss/base/talentcommunity.scss */
+	.content-panels .asc-panel ul {
+	  height: 155px;
+	}
+	@media (max-width: 992px) {
+	  /* line 782, ../scss/base/talentcommunity.scss */
+	  .content-panels .asc-panel p {
+		height: 90px;
+		font-size: 14px;
+	  }
+	  /* line 786, ../scss/base/talentcommunity.scss */
+	  .content-panels .asc-panel ul {
+		height: 155px;
+	  }
+	}
+
+	/* line 791, ../scss/base/talentcommunity.scss */
+	.jobs-module {
+	  background-color: transparent;
+	  box-shadow: none;
+	  margin: 0 0 30px;
+	  padding: 0;
+	}
+	/* line 796, ../scss/base/talentcommunity.scss */
+	.jobs-module a {
+	  text-decoration: none;
+	}
+	/* line 799, ../scss/base/talentcommunity.scss */
+	.jobs-module h2 {
+	  color: #08a5e1;
+	  font-size: 19px;
+	}
+	/* line 803, ../scss/base/talentcommunity.scss */
+	.jobs-module p {
+	  color: #777777;
+	}
+
+	@media (max-width: 1023px) {
+	  /* line 807, ../scss/base/talentcommunity.scss */
+	  .page-content {
+		margin-top: 40px;
+	  }
+	}
+
+	@media (max-width: 992px) {
+	  /* line 812, ../scss/base/talentcommunity.scss */
+	  .video-container {
+		padding-bottom: 52.8%;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 812, ../scss/base/talentcommunity.scss */
+	  .video-container {
+		padding-bottom: 50.8%;
+	  }
+	}
+
+	/* line 821, ../scss/base/talentcommunity.scss */
+	.video-container.globalresearch {
+	  padding-bottom: 53.1%;
+	}
+	@media (max-width: 992px) {
+	  /* line 821, ../scss/base/talentcommunity.scss */
+	  .video-container.globalresearch {
+		padding-bottom: 52.3%;
+	  }
+	}
+
+	/* line 827, ../scss/base/talentcommunity.scss */
+	#asc-client-record-profile-view {
+	  margin-bottom: 75px;
+	}
+
+	/* line 830, ../scss/base/talentcommunity.scss */
+	#asc-signin-btn {
+	  border: 1px solid #08A5E1;
+	  color: #08A5E1;
+	}
+
+	/* line 834, ../scss/base/talentcommunity.scss */
+	#btn-default_loc1 {
+	  position: relative;
+	  bottom: 9px;
+	}
+
+	/* line 839, ../scss/base/talentcommunity.scss */
+	#client-position-sidebar .position-information {
+	  display: none;
+	}
+
+	/* line 843, ../scss/base/talentcommunity.scss */
+	#job-location {
+	  display: none !important;
+	}
+
+	/* line 847, ../scss/base/talentcommunity.scss */
+	#jobs-sidebar #candidate-category-select {
+	  display: block;
+	}
+	/* line 850, ../scss/base/talentcommunity.scss */
+	#jobs-sidebar #candidate_category_select_chosen, #jobs-sidebar .asc-app-chosen {
+	  display: none;
+	}
+	/* line 853, ../scss/base/talentcommunity.scss */
+	#jobs-sidebar #map-nav-search {
+	  display: block;
+	}
+
+
+	/* line 862, ../scss/base/talentcommunity.scss */
+	#main_container article.pull-quote-two-column div.pull-quote p {
+	  margin-bottom: 5px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 865, ../scss/base/talentcommunity.scss */
+	  #main_container article.pull-quote-two-column div.pull-quote :nth-child(2) .p-quote {
+		margin-top: 2em;
+	  }
+	}
+	/* line 873, ../scss/base/talentcommunity.scss */
+	#main_container article.slideshow h5, #main_container article.video h5 {
+	  margin-top: 10px;
+	}
+	@media (max-width: 767px) {
+	  /* line 873, ../scss/base/talentcommunity.scss */
+	  #main_container article.slideshow h5, #main_container article.video h5 {
+		margin-top: 30px;
+	  }
+	}
+	/* line 881, ../scss/base/talentcommunity.scss */
+	#main_container #asc-signup-container label {
+	  color: #888;
+	}
+	/* line 896, ../scss/base/talentcommunity.scss */
+	#play-btn-img {
+	  color: rgba(255, 255, 255, 0.6);
+	  font-size: 180px;
+	  left: 50%;
+	  margin: -90px 0 0 -77px;
+	  position: absolute;
+	  top: 30%;
+	  transition: color 0.25s ease 0.05s;
+	  z-index: 201;
+	}
+
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- PEOPLE SLIDER ----------------------------- */
+
+	/* line 910, ../scss/base/talentcommunity.scss */
+	._staff .asc-staff-header {
+	  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, 0.8) 100%), url("/img/team/team-banner.jpg");
+	}
+	/* line 913, ../scss/base/talentcommunity.scss */
+	._staff #staff-title {
+	  bottom: 25px;
+	}
+	/* line 915, ../scss/base/talentcommunity.scss */
+	._staff #staff-title p {
+	  line-height: 1.4;
+	  margin-bottom: 10px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 915, ../scss/base/talentcommunity.scss */
+	  ._staff #staff-title p {
+		font-size: 33px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 915, ../scss/base/talentcommunity.scss */
+	  ._staff #staff-title p {
+		font-size: 24px;
+	  }
+	}
+	/* line 928, ../scss/base/talentcommunity.scss */
+	#slideDeck .popUp:after {
+	  border-color: #08a5e1 rgba(0, 0, 0, 0) white;
+	}
+	/* line 932, ../scss/base/talentcommunity.scss */
+	#slideDeck .popUp p {
+	  white-space: normal;
+	}
+	/* line 936, ../scss/base/talentcommunity.scss */
+	#slideDeck .slideArrow {
+	  color: #08A5E1;
+	}
+	/* line 938, ../scss/base/talentcommunity.scss */
+	#slideDeck .slideArrow:hover {
+	  color: #0086C6;
+	}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------------- CAREERS ------------------------------- */
+
+	/* line 948, ../scss/base/talentcommunity.scss */
+	._careers .asc-job-public-name a {
+	  font-size: 17px;
+	  font-weight: 400;
+	}
+	/* line 953, ../scss/base/talentcommunity.scss */
+	._careers .asc-job-public-stats.muted {
+	  color: #666;
+	}
+	/* line 955, ../scss/base/talentcommunity.scss */
+	._careers .asc-job-public-stats.muted p {
+	  font-size: 15px;
+	}
+	/* line 959, ../scss/base/talentcommunity.scss */
+	._careers .asc-job-public-tile {
+	  padding: 20px 10px;
+	}
+	/* line 965, ../scss/base/talentcommunity.scss */
+	._careers .filters {
+	  top: -375px;
+	}
+	@media (max-width: 767px) {
+	  /* line 965, ../scss/base/talentcommunity.scss */
+	  ._careers .filters {
+		top: -25px;
+	  }
+	}
+	/* line 971, ../scss/base/talentcommunity.scss */
+	._careers .jobs-content {
+	  margin-bottom: 50px;
+	}
+	/* line 974, ../scss/base/talentcommunity.scss */
+	._careers .jobs-module.asc-panel {
+	  background: rgba(255, 255, 255, 0.85);
+	  box-shadow: none;
+	  margin-top: 30px;
+	  padding: 30px;
+	}
+	/* line 979, ../scss/base/talentcommunity.scss */
+	._careers .jobs-module.asc-panel h5 {
+	  color: #08a5e1;
+	  font-size: 16px;
+	  font-weight: 400;
+	  text-transform: none;
+	  width: auto;
+	}
+	/* line 987, ../scss/base/talentcommunity.scss */
+	._careers .leaflet-bar.leaflet-control {
+	  display: none;
+	  position: absolute;
+	  right: -25px;
+	}
+	/* line 992, ../scss/base/talentcommunity.scss */
+	._careers .map-container {
+	  height: 510px;
+	}
+	/* line 994, ../scss/base/talentcommunity.scss */
+	._careers .map-container a#map-toggle {
+	  margin-top: -34px;
+	  position: absolute;
+	  right: 0;
+	  transition: margin-top 0s;
+	  z-index: 1200;
+	}
+	@media (max-width: 767px) {
+	  /* line 994, ../scss/base/talentcommunity.scss */
+	  ._careers .map-container a#map-toggle {
+		display: none;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 992, ../scss/base/talentcommunity.scss */
+	  ._careers .map-container {
+		height: 125px;
+	  }
+	}
+	/* line 1008, ../scss/base/talentcommunity.scss */
+	._careers #client-job-menu-system {
+	  background-color: #f2f2f2;
+	  border-bottom: 1px solid #ccc;
+	  margin-top: 15px;
+	}
+	/* line 1012, ../scss/base/talentcommunity.scss */
+	._careers #client-job-menu-system .asc-clear-filters {
+	  display: none;
+	}
+	/* line 1017, ../scss/base/talentcommunity.scss */
+	._careers #jobs-map {
+	  border: none;
+	  box-shadow: none;
+	  height: 510px;
+	  margin-bottom: 0;
+	}
+	@media (max-width: 767px) {
+	  /* line 1017, ../scss/base/talentcommunity.scss */
+	  ._careers #jobs-map {
+		display: none !important;
+	  }
+	}
+	/* line 1025, ../scss/base/talentcommunity.scss */
+	._careers #jobs-map .leaflet-top .leaflet-control {
+	  margin-top: 135px;
+	}
+	/* line 1029, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar {
+	  background: rgba(255, 255, 255, 0.82);
+	  padding: 30px;
+	}
+	/* line 1032, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar h5, ._careers #jobs-sidebar div:nth-child(1) > h5 {
+	  color: #08a5e1;
+	  font-size: 16px;
+	  font-weight: 400;
+	  text-transform: none;
+	  width: auto;
+	}
+	@media (max-width: 992px) {
+	  /* line 1032, ../scss/base/talentcommunity.scss */
+	  ._careers #jobs-sidebar h5, ._careers #jobs-sidebar div:nth-child(1) > h5 {
+		font-size: 12px;
+	  }
+	}
+	/* line 1042, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .asc-clear-filters {
+	  color: #08a5e1;
+	  float: right;
+	  margin-top: -30px;
+	}
+	@media (max-width: 992px) {
+	  /* line 1042, ../scss/base/talentcommunity.scss */
+	  ._careers #jobs-sidebar .asc-clear-filters {
+		font-size: 12px;
+		margin-top: -25px;
+	  }
+	}
+	/* line 1052, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .careers-title h3 {
+	  font-size: 20px;
+	  line-height: 25px;
+	  margin-bottom: 25px;
+	}
+	/* line 1058, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .submenu-dropdown {
+	  background-color: transparent;
+	}
+	/* line 1066, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .submenu-dropdown-inner .search-wrap button {
+	  top: 46px;
+	}
+	/* line 1068, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .submenu-dropdown-inner .search-wrap button i {
+	  color: #fff;
+	}
+	/* line 1071, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar .submenu-dropdown-inner .search-wrap button:hover {
+	  cursor: pointer;
+	}
+	/* line 1077, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #asc-job-map-mapslider {
+	  font-size: 15px;
+	  font-weight: 300;
+	}
+	/* line 1083, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #ascMapMenuForm .ui-slider.ui-state-disabled .ui-slider-handle {
+	  background: #c9d6de;
+	}
+	/* line 1086, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #ascMapMenuForm .ui-slider.ui-state-disabled .ui-slider-range {
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	  -moz-opacity: 0.2;
+	  -khtml-opacity: 0.2;
+	  opacity: 0.2;
+	}
+	/* line 1093, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #ascMapMenuForm #asc-map-location-text {
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	  -moz-opacity: 0.4;
+	  -khtml-opacity: 0.4;
+	  opacity: 0.4;
+	}
+	/* line 1099, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #ascMapMenuForm #candidate-custom {
+	  display: none !important;
+	}
+	/* line 1102, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #ascMapMenuForm #map-nav-search i {
+	  background: #08a5e1;
+	}
+	/* line 1107, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #jobmenu #job-location-text {
+	  border: 1px solid #ddd;
+	  height: 36px;
+	  margin-top: 1em;
+	}
+	/* line 1113, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #map-nav-search {
+	  border: 1px solid #ddd;
+	  margin: 12px 0;
+	}
+	/* line 1116, ../scss/base/talentcommunity.scss */
+	._careers #jobs-sidebar #map-nav-search i {
+	  color: #fff;
+	}
+
+	/* line 1122, ../scss/base/talentcommunity.scss */
+	._careers.page-content {
+	  margin-bottom: 100px;
+	  margin-top: 150px;
+	}
+
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- COMMUNITY AMBASSADOR  ------------------------ */
+
+	/* line 1128, ../scss/base/talentcommunity.scss */
+	#community-ambassador {
+	  display: none;
+	  margin-top: 15px;
+	}
+	/* line 1131, ../scss/base/talentcommunity.scss */
+	#community-ambassador .asc-staff-img {
+	  margin-right: 10px;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- UNI-CULTURE ----------------------------- */
+	
+	/* line 1137, ../scss/base/talentcommunity.scss */
+	#uni-culture-quote {
+	  width: 75%;
+	  margin: 0 auto;
+	  padding-top: 20px;
+	  text-align: left;
+	}
+	/* line 1142, ../scss/base/talentcommunity.scss */
+	#uni-culture-quote p {
+	  font-size: 28px;
+	}
+	/* line 1145, ../scss/base/talentcommunity.scss */
+	#uni-culture-quote span {
+	  float: right;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------- TEAM THUMB  ----------------------------- */
+
+	/* line 1149, ../scss/base/talentcommunity.scss */
+	.team-thumb, .focus-thumb {
+	  background: #fff;
+	  background-size: cover;
+	  margin-bottom: 30px;
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	}
+	/* line 1156, ../scss/base/talentcommunity.scss */
+	.team-thumb .team-box, .team-thumb .focus-box, .focus-thumb .team-box, .focus-thumb .focus-box {
+	  display: table;
+	  padding: 0;
+	  position: absolute;
+	  width: 100%;
+	  z-index: 4;
+	}
+	/* line 1162, ../scss/base/talentcommunity.scss */
+	.team-thumb .team-box .team-label, .team-thumb .team-box .focus-label, .team-thumb .focus-box .team-label, .team-thumb .focus-box .focus-label, .focus-thumb .team-box .team-label, .focus-thumb .team-box .focus-label, .focus-thumb .focus-box .team-label, .focus-thumb .focus-box .focus-label {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  color: #fff;
+	  display: table-cell;
+	  font-size: 24px;
+	  padding: 0 20px;
+	  position: relative;
+	  text-align: center;
+	  top: 0;
+	  transition: top .2s ease-out;
+	  vertical-align: middle;
+	}
+	/* line 1175, ../scss/base/talentcommunity.scss */
+	.team-thumb .veil, .focus-thumb .veil {
+	  height: 100%;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	  transition: top .2s ease-out;
+	  width: 100%;
+	  z-index: 3;
+	}
+	/* line 1185, ../scss/base/talentcommunity.scss */
+	.team-thumb:hover .focus-box .focus-label, .team-thumb:hover .team-box .team-label, .team-thumb:hover .veil, .focus-thumb:hover .focus-box .focus-label, .focus-thumb:hover .team-box .team-label, .focus-thumb:hover .veil {
+	  cursor: pointer;
+	  top: -300px;
+	}
+	/* line 1189, ../scss/base/talentcommunity.scss */
+	.team-thumb:hover .focus-description, .focus-thumb:hover .focus-description {
+	  z-index: 10;
+	  transition: z-index .2s ease-out;
+	}
+
+	/* line 1195, ../scss/base/talentcommunity.scss */
+	.team-thumb {
+	  min-height: 285px;
+	}
+	/* line 1197, ../scss/base/talentcommunity.scss */
+	.team-thumb .team-box {
+	  height: 285px;
+	}
+	/* line 1200, ../scss/base/talentcommunity.scss */
+	.team-thumb .veil {
+	  background-color: rgba(7, 7, 22, 0.7);
+	}
+
+	/* line 1204, ../scss/base/talentcommunity.scss */
+	.focus-thumb {
+	  min-height: 250px;
+	}
+	/* line 1206, ../scss/base/talentcommunity.scss */
+	.focus-thumb .focus-box {
+	  height: 250px;
+	}
+	/* line 1209, ../scss/base/talentcommunity.scss */
+	.focus-thumb .focus-description {
+	  display: table;
+	  height: 250px;
+	  padding: 25px;
+	  position: absolute;
+	  width: 100%;
+	}
+	/* line 1215, ../scss/base/talentcommunity.scss */
+	.focus-thumb .focus-description p {
+	  display: table-cell;
+	  position: relative;
+	  vertical-align: middle;
+	}
+	/* line 1219, ../scss/base/talentcommunity.scss */
+	.focus-thumb .focus-description p a.btn.btn-team {
+	  border: 2px solid #08a5e1;
+	  color: #08a5e1;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  min-width: 250px;
+	  padding: 15px 15px 11px;
+	}
+	/* line 1226, ../scss/base/talentcommunity.scss */
+	.focus-thumb .focus-description p a.btn.btn-team:hover {
+	  background-color: #08a5e1;
+	  color: #fff;
+	}
+	/* line 1233, ../scss/base/talentcommunity.scss */
+	.focus-thumb .veil {
+	  background-color: rgba(17, 50, 95, 0.88);
+	  background-size: cover;
+	  background-position: top center;
+	}
+	@media (max-width: 992px) {
+	  /* line 1204, ../scss/base/talentcommunity.scss */
+	  .focus-thumb {
+		min-height: 300px;
+	  }
+	  /* line 1240, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-box {
+		height: 300px;
+	  }
+	  /* line 1243, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-description {
+		height: 300px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 1204, ../scss/base/talentcommunity.scss */
+	  .focus-thumb {
+		min-height: 215px;
+	  }
+	  /* line 1249, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-box {
+		height: 215px;
+	  }
+	  /* line 1252, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-description {
+		height: 215px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 1204, ../scss/base/talentcommunity.scss */
+	  .focus-thumb {
+		min-height: 240px;
+	  }
+	  /* line 1258, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-box {
+		height: 240px;
+	  }
+	  /* line 1261, ../scss/base/talentcommunity.scss */
+	  .focus-thumb .focus-description {
+		height: 240px;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------------- FOOTER  ------------------------------- */
+
+	/* line 1268, ../scss/base/talentcommunity.scss */
+	footer {
+	  background-color: #dededd;
+	  /* bottom: 0; */
+	  margin-top: 0;
+	  padding-top: 2.857142857em;
+	  /* position: absolute; */
+	  width: 100%;
+	}
+	/* line 1275, ../scss/base/talentcommunity.scss */
+	footer ul {
+	  list-style: none;
+	  margin-left: 0;
+	  margin-right: 2.857142857em;
+	  margin-top: 2.25em;
+	  padding-left: 0;
+	}
+	/* line 1281, ../scss/base/talentcommunity.scss */
+	footer ul li {
+	  border-top: 1px dotted #a3a3a3;
+	  font-size: 0.8571428571428571em;
+	  line-height: 1.0em;
+	  list-style: none;
+	  padding: 0.8em 0;
+	}
+	/* line 1287, ../scss/base/talentcommunity.scss */
+	footer ul li a {
+	  color: black;
+	  font-weight: 700;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	}
+	/* line 1295, ../scss/base/talentcommunity.scss */
+	footer .about {
+	  float: left;
+	  width: 68.78306878306879%;
+	}
+	/* line 1298, ../scss/base/talentcommunity.scss */
+	footer .about h3, footer .about p {
+	  margin-right: 2.857142857em;
+	}
+	/* line 1301, ../scss/base/talentcommunity.scss */
+	footer .about h3 {
+	  border-bottom: 1px dotted #a3a3a3;
+	  font-size: 1.4285714285714286em;
+	  font-weight: 700;
+	  line-height: 1.6em;
+	  margin-bottom: 13px;
+	}
+	/* line 1308, ../scss/base/talentcommunity.scss */
+	footer .about p {
+	  font-family: 'GEInspira';
+	  font-size: 14px;
+	  text-align: left;
+	}
+	/* line 1314, ../scss/base/talentcommunity.scss */
+	footer .logos {
+	  bottom: 0;
+	  height: 13px;
+	  margin-bottom: 4.071428571em;
+	  padding-bottom: 15px;
+	  position: absolute;
+	  width: 300px;
+	}
+	/* line 1321, ../scss/base/talentcommunity.scss */
+	footer .logos img {
+	  display: inline-block;
+	  margin-right: 10px;
+	  vertical-align: bottom;
+	}
+	/* line 1327, ../scss/base/talentcommunity.scss */
+	footer .copyright {
+	  color: #333;
+	  font-family: GEInspira;
+	  font-size: 12px;
+	  font-weight: 100;
+	  padding-top: 12px;
+	  text-transform: uppercase;
+	}
+	/* line 1334, ../scss/base/talentcommunity.scss */
+	footer .copyright a {
+	  display: block;
+	  font-size: 12px;
+	  padding-top: 5px;
+	  text-transform: none;
+	}
+	/* line 1341, ../scss/base/talentcommunity.scss */
+	footer #sitemap-col-1 {
+	  float: left;
+	  width: 16.296296296296298%;
+	}
+	/* line 1345, ../scss/base/talentcommunity.scss */
+	footer #sitemap-col-2 {
+	  float: left;
+	  width: 14.814814814814813%;
+	}
+	/* line 1348, ../scss/base/talentcommunity.scss */
+	footer #sitemap-col-2 ul {
+	  margin-right: 0;
+	}
+	@media (max-width: 767px) {
+	  /* line 1353, ../scss/base/talentcommunity.scss */
+	  footer .about {
+		width: 100%;
+	  }
+	  /* line 1355, ../scss/base/talentcommunity.scss */
+	  footer .about p {
+		margin-right: 0;
+	  }
+	  /* line 1359, ../scss/base/talentcommunity.scss */
+	  footer .logos {
+		display: none;
+	  }
+	  /* line 1362, ../scss/base/talentcommunity.scss */
+	  footer #sitemap-col-1, footer #sitemap-col-2 {
+		width: 50%;
+	  }
+	}
+
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------- BODY VENTURES MAIN -------------------------- */
+
+/* CUSTOM STYLES FOR VENTURES SITE */
+
+	/* line 1370, ../scss/base/talentcommunity.scss */
+	body.ventures {
+	  background: #000;
+	  /** Pages **/
+	  /** Navigation **/
+	  /*** Logo Display ***/
+	  /*** Articles List Page ***/
+	  /*** Signup Page ***/
+	}
+	/* line 1373, ../scss/base/talentcommunity.scss */
+	body.ventures #background-image {
+	  background-position: 50% 46% !important;
+	}
+	@media (max-width: 568px) {
+	  /* line 1376, ../scss/base/talentcommunity.scss */
+	  body.ventures .hero-wrap {
+		height: 290px;
+	  }
+	}
+	/* line 1381, ../scss/base/talentcommunity.scss */
+	body.ventures .hero-controls {
+	  background-color: rgba(0, 0, 0, 0.4);
+	  padding-top: 1em;
+	  padding-bottom: 2em;
+	}
+	/* line 1386, ../scss/base/talentcommunity.scss */
+	body.ventures #team-signup {
+	  min-height: 32em;
+	}
+	/* line 1390, ../scss/base/talentcommunity.scss */
+	body.ventures section.section {
+	  background-color: #000;
+	  color: #efefef;
+	}
+	/* line 1394, ../scss/base/talentcommunity.scss */
+	body.ventures section.section.posts.with-banner {
+	  background-color: #f2f2f2;
+	}
+	/* line 1396, ../scss/base/talentcommunity.scss */
+	body.ventures section.section.posts.with-banner div.asc-post-side-nav {
+	  margin-top: 0;
+	  margin-bottom: 50px;
+	  margin-right: 30px;
+	  padding: 30px;
+	  background-color: #333;
+	}
+	@media (max-width: 767px) {
+	  /* line 1396, ../scss/base/talentcommunity.scss */
+	  body.ventures section.section.posts.with-banner div.asc-post-side-nav {
+		margin-right: 0;
+	  }
+	}
+	/* line 1406, ../scss/base/talentcommunity.scss */
+	body.ventures section.section.posts.with-banner .asc-post-inner-content {
+	  color: #333;
+	}
+	/* line 1410, ../scss/base/talentcommunity.scss */
+	body.ventures section#team-signup {
+	  background-color: #f2f2f2;
+	  color: #333;
+	}
+	/* line 1414, ../scss/base/talentcommunity.scss */
+	body.ventures #main_container {
+	  background-color: #f2f2f2;
+	  padding-bottom: 0;
+	}
+	/* line 1417, ../scss/base/talentcommunity.scss */
+	body.ventures #main_container .asc-articles-info {
+	  background-color: #f2f2f2;
+	}
+	/* line 1420, ../scss/base/talentcommunity.scss */
+	body.ventures #main_container #signindiv {
+	  padding-top: 10px;
+	}
+	/* line 1425, ../scss/base/talentcommunity.scss */
+	body.ventures .post-banner {
+	  height: 368px;
+	  width: 100%;
+	  background-size: cover;
+	  background-position: 65% 12%;
+	  background-image: url("/img/fellows/building.jpg");
+	}
+	/* line 1432, ../scss/base/talentcommunity.scss */
+	body.ventures #ge-panel {
+	  background-color: white;
+	  color: black;
+	  font-size: 2em;
+	}
+	/* line 1436, ../scss/base/talentcommunity.scss */
+	body.ventures #ge-panel img {
+	  margin: 2em 0em 2em 2em;
+	}
+	@media (max-width: 992px) {
+	  /* line 1436, ../scss/base/talentcommunity.scss */
+	  body.ventures #ge-panel img {
+		margin: 4em 0em 4em 1.5em;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 1432, ../scss/base/talentcommunity.scss */
+	  body.ventures #ge-panel {
+		font-size: 1.5em;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 1448, ../scss/base/talentcommunity.scss */
+	  body.ventures .join-community .description {
+		margin-top: 1.5em;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- BODY VENTURES NAVBAR  ------------------------ */
+
+	/* line 1455, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav {
+	  height: 65px;
+	}
+	/* line 1457, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav a.brand {
+	  font-size: 42px;
+	  line-height: 60px;
+	  margin-left: 20px;
+	  margin-top: 4px;
+	  padding: 0 0 1px 0;
+	}
+	/* line 1463, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav a.brand span {
+	  display: inline-block;
+	  font-size: 22px;
+	  left: 1px;
+	  margin-bottom: -10px;
+	  position: relative;
+	  top: -4px;
+	}
+	@media (max-width: 992px) {
+	  /* line 1463, ../scss/base/talentcommunity.scss */
+	  body.ventures nav#main-nav a.brand span {
+		font-size: 12px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 1457, ../scss/base/talentcommunity.scss */
+	  body.ventures nav#main-nav a.brand {
+		font-size: 38px;
+	  }
+	}
+	/* line 1477, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav a.brand img {
+	  height: 35px;
+	}
+	@media (max-width: 568px) {
+	  /* line 1477, ../scss/base/talentcommunity.scss */
+	  body.ventures nav#main-nav a.brand img {
+		height: 30px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 1484, ../scss/base/talentcommunity.scss */
+	  body.ventures nav#main-nav .navbar-collapse {
+		background: #000;
+		margin-top: 0;
+	  }
+	  /* line 1488, ../scss/base/talentcommunity.scss */
+	  body.ventures nav#main-nav .navbar-collapse .navbar-nav.pull-right {
+		width: 100%;
+	  }
+	}
+	/* line 1493, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.collapsing {
+	  background: #000;
+	}
+	/* line 1496, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.in {
+	  background: #000;
+	}
+	/* line 1498, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.in #asc-settings-menu {
+	  margin-left: 0;
+	}
+	/* line 1500, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.in #asc-settings-menu ul#asc-header-user-menu {
+	  float: left !important;
+	  margin-left: 50px;
+	  min-width: 250px;
+	}
+	/* line 1504, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.in #asc-settings-menu ul#asc-header-user-menu #right-header-container {
+	  background-color: #f2f2f2;
+	}
+	/* line 1508, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-collapse.in #asc-settings-menu #asc-main-user-menu {
+	  margin-left: 12px;
+	}
+	/* line 1513, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-inner {
+	  background-color: #000;
+	  color: #fff;
+	}
+	/* line 1517, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav {
+	  margin-top: 20px;
+	}
+	/* line 1519, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav li > a {
+	  background-color: rgba(0, 0, 0, 0.88);
+	  color: #999;
+	  font-size: 13.5px;
+	  letter-spacing: 1px;
+	  text-transform: uppercase;
+	}
+	/* line 1525, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav li > a:hover, body.ventures nav#main-nav .navbar-nav li > a:focus, body.ventures nav#main-nav .navbar-nav li > a:active {
+	  color: #fff;
+	}
+	/* line 1529, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav li > a.dropdown-toggle {
+	  top: -1px;
+	}
+	/* line 1534, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav > .open > a:hover, body.ventures nav#main-nav .navbar-nav > .open > a:focus, body.ventures nav#main-nav .navbar-nav > .open > a:active {
+	  background-color: transparent;
+	}
+	/* line 1538, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-nav.pull-right {
+	  width: auto;
+	}
+	/* line 1541, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-toggle {
+	  margin-top: 15px;
+	}
+	/* line 1543, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-toggle:hover, body.ventures nav#main-nav .navbar-toggle:focus, body.ventures nav#main-nav .navbar-toggle:active {
+	  background-color: transparent;
+	  border-color: #08a5e1;
+	}
+	/* line 1546, ../scss/base/talentcommunity.scss */
+	body.ventures nav#main-nav .navbar-toggle:hover .icon-bar, body.ventures nav#main-nav .navbar-toggle:focus .icon-bar, body.ventures nav#main-nav .navbar-toggle:active .icon-bar {
+	  background-color: #08a5e1;
+	}
+	/* line 1554, ../scss/base/talentcommunity.scss */
+	body.ventures #asc-settings-menu .dropdown.open a#asc-main-user-menu {
+	  background: transparent;
+	}
+	/* line 1559, ../scss/base/talentcommunity.scss */
+	body.ventures #asc-settings-menu #asc-header-user-menu #about-me-info {
+	  color: #333;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- BODY VENTURES LANDING ------------------------ */
+
+	/* line 1566, ../scss/base/talentcommunity.scss */
+	body.ventures ._about-us > .content h5.hr {
+	  color: #fff;
+	}
+	/* line 1573, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels {
+	  margin-top: 0;
+	}
+	/* line 1575, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom {
+	  background-color: #222;
+	}
+	/* line 1577, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom a.btn-plain {
+	  background-color: transparent;
+	  border: 1px solid rgba(255, 255, 255, 0.2);
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  margin-left: 0;
+	  padding: 12px 20px 7px;
+	  text-align: left;
+	  text-decoration: none;
+	  width: 180px;
+	}
+	/* line 1587, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom a.btn-plain:hover {
+	  color: #08a5e1;
+	}
+	/* line 1591, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom h2 {
+	  font-size: 16px;
+	  margin: 8px 0 12px;
+	  text-transform: none;
+	}
+	/* line 1596, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom h5 {
+	  font-size: 18px;
+	  line-height: 130%;
+	  min-height: 55px;
+	}
+	/* line 1601, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-bottom p {
+	  margin-bottom: 20px;
+	  min-height: 110px;
+	}
+	@media (max-width: 1200px) {
+	  /* line 1601, ../scss/base/talentcommunity.scss */
+	  body.ventures ._landing > .content div.content-panels .panel-bottom p {
+		min-height: 135px;
+	  }
+	}
+	@media (max-width: 992px) {
+	  /* line 1601, ../scss/base/talentcommunity.scss */
+	  body.ventures ._landing > .content div.content-panels .panel-bottom p {
+		min-height: 200px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 1601, ../scss/base/talentcommunity.scss */
+	  body.ventures ._landing > .content div.content-panels .panel-bottom p {
+		min-height: 70px;
+	  }
+	}
+	/* line 1615, ../scss/base/talentcommunity.scss */
+	body.ventures ._landing > .content div.content-panels .panel-image {
+	  background-position: center top;
+	}
+	/* line 1621, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group {
+	  margin-bottom: 50px;
+	}
+	/* line 1623, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group .panel {
+	  border: 1px solid #5587a7;
+	  border-radius: 4px;
+	  margin-bottom: 15px;
+	}
+	/* line 1628, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group .panel-default {
+	  border-color: #5587a7;
+	}
+	/* line 1630, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group .panel-default > .panel-heading {
+	  background-color: #5587a7;
+	  border-bottom: 1px solid #5587a7;
+	  border-top: 1px solid #5587a7;
+	}
+	/* line 1635, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group .panel-default .panel-body {
+	  background-color: #fff;
+	  color: #333333;
+	}
+	/* line 1640, ../scss/base/talentcommunity.scss */
+	body.ventures .panel-group .panel-default.end {
+	  margin-bottom: 50px;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- BODY VENTURES ARTICLE ------------------------ */
+
+	/* line 1647, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .post-banner {
+	  background-position: 65% 36%;
+	}
+	/* line 1650, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos {
+	  margin-bottom: 1px;
+	}
+	/* line 1652, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos h3 {
+	  color: #08a5e1;
+	  margin-bottom: 1em;
+	}
+	/* line 1673, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos .row-logo {
+	  text-align: center;
+	  hyphens: none;
+	}
+	/* line 1676, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos .row-logo a {
+	  text-decoration: none;
+	}
+	/* line 1680, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos .logo {
+	  width: 150px;
+	  height: 100px;
+	  padding: 0.5em;
+	  margin: 1em;
+	  border: 5px solid rgba(255, 255, 255, 0.3);
+	  background-color: black;
+	}
+	/* line 1687, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos .logo:hover {
+	  border-color: #08a5e1;
+	}
+	@media (max-width: 568px) {
+	  /* line 1680, ../scss/base/talentcommunity.scss */
+	  body.ventures #articleinfo .logos .logo {
+		width: 100px;
+		height: 75px;
+		margin: 1.35em;
+	  }
+	}
+	/* line 1696, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos .nav-tabs {
+	  margin-bottom: 2em;
+	  border-bottom: 1px solid black;
+	}
+	/* line 1700, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li {
+	  background: transparent;
+	  border: 1px white solid;
+	  min-width: 20%;
+	  text-align: center;
+	}
+	@media (max-width: 1040px) {
+	  /* line 1700, ../scss/base/talentcommunity.scss */
+	  body.ventures #articleinfo .logos li {
+		min-width: 100%;
+	  }
+	}
+	/* line 1708, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li:first-of-type {
+	  border-radius: 5px 0px 0px 5px;
+	}
+	/* line 1711, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li:last-of-type {
+	  border-radius: 0px 5px 5px 0px;
+	}
+	/* line 1714, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li a {
+	  text-decoration: none;
+	  color: white;
+	  border: none;
+	  margin-right: 0;
+	}
+	/* line 1719, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li a:hover {
+	  color: #08a5e1;
+	  background-color: black;
+	}
+	/* line 1725, ../scss/base/talentcommunity.scss */
+	body.ventures #articleinfo .logos li.active a {
+	  background: #08a5e1;
+	  color: white;
+	  border-radius: inherit;
+	  border: none;
+	  margin-right: 0;
+	}
+	/* line 1739, ../scss/base/talentcommunity.scss */
+	body.ventures article.asc-post p.by-line {
+	  color: #333;
+	}
+	/* line 1743, ../scss/base/talentcommunity.scss */
+	body.ventures article.asc-post ul.asc-post-list li.asc-post-li {
+	  margin-right: 20px;
+	}
+	/* line 1747, ../scss/base/talentcommunity.scss */
+	body.ventures article.asc-post .asc-post-inner-content {
+	  padding-right: 30px;
+	}
+	/* line 1754, ../scss/base/talentcommunity.scss */
+	body.ventures #asc-signup-container #alt-email-signup > h4 {
+	  color: #888;
+	}
+	/* line 1760, ../scss/base/talentcommunity.scss */
+	body.ventures #asc-signup-disclosure-datablock .asc-disclosure {
+	  color: #888;
+	}
+	/* line 1765, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-mobile {
+	  display: none;
+	}
+	@media (max-width: 767px) {
+	  /* line 1765, ../scss/base/talentcommunity.scss */
+	  body.ventures #about-the-program-mobile {
+		display: block;
+	  }
+	}
+	/* line 1772, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop .well {
+	  background-color: rgba(0, 0, 0, 0.6);
+	}
+	@media (max-width: 767px) {
+	  /* line 1771, ../scss/base/talentcommunity.scss */
+	  body.ventures #about-the-program-desktop {
+		display: none;
+	  }
+	}
+	/* line 1778, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop h1 {
+	  font-size: 1.2em;
+	  text-transform: uppercase;
+	  text-align: left;
+	  border-bottom: 1px solid white;
+	  margin-left: -1em;
+	}
+	/* line 1785, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop a {
+	  cursor: pointer;
+	  text-decoration: none;
+	  font-size: 1em;
+	}
+	/* line 1789, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop a span {
+	  display: block;
+	  padding: .5em 0 .5em;
+	}
+	/* line 1793, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop a.selected {
+	  color: #08a5e1;
+	}
+	/* line 1796, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop a.clicked {
+	  color: #08a5e1;
+	}
+	/* line 1801, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop .answers h1 {
+	  text-align: center;
+	  font-size: 2em;
+	  border-bottom: none;
+	  padding-top: 3em;
+	}
+	/* line 1807, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop .answers p {
+	  padding: 5% 2em 0em 3em;
+	  font-size: 1.5em;
+	}
+	/* line 1811, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop .answers ul {
+	  list-style: disc;
+	  padding: 5% 2em 0em 5em;
+	}
+	/* line 1814, ../scss/base/talentcommunity.scss */
+	body.ventures #about-the-program-desktop .answers ul li {
+	  font-size: 1.5em;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------- GLOBAL RESEARCH TEAM  ------------------------ */
+
+	/* line 1825, ../scss/base/talentcommunity.scss */
+	#global-research-team-page .focus-thumb .veil {
+	  -webkit-filter: grayscale(100%);
+	  filter: grayscale(100%);
+	}
+	/* line 1829, ../scss/base/talentcommunity.scss */
+	#global-research-team-page .focus-thumb .btn-team {
+	  background-color: white;
+	}
+	/* line 1831, ../scss/base/talentcommunity.scss */
+	#global-research-team-page .focus-thumb .btn-team:hover {
+	  background-color: #08a5e1;
+	}
+
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------- NAVBAR.CURRENT LANDING CONTENT  ------------------- */
+
+	/* line 1841, ../scss/base/talentcommunity.scss */
+	nav#current-navbar {
+	  font-family: 'GEInspiraBold', Helvetica, Arial, sans-serif;
+	  background-color: rgba(0, 0, 0, 0.9);
+	  border: none;
+	  min-height: 78px;
+	}
+	@media (max-width: 1100px) and (min-width: 768px) {
+	  /* line 1846, ../scss/base/talentcommunity.scss */
+	  nav#current-navbar a.navbar-toggle {
+		top: 1.5em;
+	  }
+	}
+	/* line 1851, ../scss/base/talentcommunity.scss */
+	nav#current-navbar a.nav-link {
+	  color: white;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  letter-spacing: 0.3em;
+	  font-size: 0.8em;
+	  top: 2.5em;
+	  padding: 0.5em 0.7em;
+	}
+	/* line 1859, ../scss/base/talentcommunity.scss */
+	nav#current-navbar a.nav-link:after {
+	  content: '';
+	  display: block;
+	  margin: 12px auto 0px;
+	  height: 2px;
+	  width: 0px;
+	  background: transparent;
+	  transition: width .5s ease, background-color .5s ease;
+	}
+	/* line 1868, ../scss/base/talentcommunity.scss */
+	nav#current-navbar a.nav-link:hover:after {
+	  width: 100%;
+	  background: white;
+	}
+	@media (max-width: 1100px) and (min-width: 768px) {
+	  /* line 1851, ../scss/base/talentcommunity.scss */
+	  nav#current-navbar a.nav-link {
+		top: 0;
+	  }
+	}
+	/* line 1876, ../scss/base/talentcommunity.scss */
+	nav#current-navbar img {
+	  height: 53px;
+	  margin-top: 16px;
+	}
+	/* line 1880, ../scss/base/talentcommunity.scss */
+	nav#current-navbar li {
+	  margin: -5px 0 0 2em;
+	}
+	/* line 1883, ../scss/base/talentcommunity.scss */
+	nav#current-navbar .btn {
+	  background-color: transparent;
+	}
+	@media (max-width: 568px) {
+	  /* line 1886, ../scss/base/talentcommunity.scss */
+	  nav#current-navbar .navbar-collapse.in {
+		background: rgba(0, 0, 0, 0.9);
+		padding-bottom: 1em;
+	  }
+	}
+	/* line 1892, ../scss/base/talentcommunity.scss */
+	nav#current-navbar #menu_sign_in {
+	  border: none;
+	}
+	/* line 1894, ../scss/base/talentcommunity.scss */
+	nav#current-navbar #menu_sign_in:hover {
+	  color: white !important;
+	}
+	/* line 1898, ../scss/base/talentcommunity.scss */
+	nav#current-navbar #client-settings-menu {
+	  margin-top: 25px;
+	}
+	@media (max-width: 568px) {
+	  /* line 1898, ../scss/base/talentcommunity.scss */
+	  nav#current-navbar #client-settings-menu {
+		float: right;
+	  }
+	}
+	/* line 1905, ../scss/base/talentcommunity.scss */
+	nav#current-navbar #asc-header-user-menu li {
+	  margin: 0;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------ BODY.CURRENT LANDING CONTENT  -------------------- */
+
+	/* line 1976, ../scss/base/talentcommunity.scss */
+	body.current ._landing.team > .hero-wrap {
+	  height: 350px;
+	}
+	/* line 1979, ../scss/base/talentcommunity.scss */
+	body.current ._landing.team > .hero-wrap .hero-controls {
+	  bottom: 115px;
+	}
+	/* line 1982, ../scss/base/talentcommunity.scss */
+	body.current div#background-image {
+	  height: 650px;
+	}
+	/* line 1985, ../scss/base/talentcommunity.scss */
+	body.current ._landing .hero-controls {
+	  width: 100%;
+	  max-width: 100%;
+	}
+	/* line 1988, ../scss/base/talentcommunity.scss */
+	body.current ._landing .hero-controls h1 {
+	  font-family: 'GEInspiraBold', Helvetica, Arial, sans-serif;
+	  font-size: 3.25em;
+	  font-weight: bold;
+	}
+	@media (max-width: 568px) {
+	  /* line 1988, ../scss/base/talentcommunity.scss */
+	  body.current ._landing .hero-controls h1 {
+		line-height: 1.1em;
+	  }
+	}
+	/* line 1997, ../scss/base/talentcommunity.scss */
+	body.current a {
+	  color: #ce9d4b;
+	}
+	/* line 2000, ../scss/base/talentcommunity.scss */
+	body.current h2 {
+	  color: white;
+	}
+	/* line 2003, ../scss/base/talentcommunity.scss */
+	body.current h5 {
+	  color: #6B8BBB;
+	}
+	/* line 2007, ../scss/base/talentcommunity.scss */
+	body.current #asc-init-signin .btn {
+	  color: white;
+	}
+	/* line 2009, ../scss/base/talentcommunity.scss */
+	body.current #asc-init-signin .btn:hover {
+	  color: #FF6D52 !important;
+	  background-color: transparent;
+	}
+	/* line 2015, ../scss/base/talentcommunity.scss */
+	body.current .btn-primary, body.current #asc-signup-cancel-button, body.current #asc-signin-btn {
+	  background-color: #FF6D52;
+	  border: 3px solid #FF6D52;
+	  color: white;
+	}
+	/* line 2019, ../scss/base/talentcommunity.scss */
+	body.current .btn-primary:hover, body.current #asc-signup-cancel-button:hover, body.current #asc-signin-btn:hover {
+	  color: #FF6D52 !important;
+	  background-color: transparent;
+	}
+	/* line 2024, ../scss/base/talentcommunity.scss */
+	body.current .content {
+	  margin-top: 10.5em;
+	  padding-bottom: 50px;
+	}
+	/* line 2027, ../scss/base/talentcommunity.scss */
+	body.current .content div.content-panels {
+	  margin-top: 30px;
+	}
+	/* line 2030, ../scss/base/talentcommunity.scss */
+	body.current .content h2.current-subhead {
+	  color: #6B8BBB;
+	  font-size: 2em;
+	  text-align: center;
+	  margin-top: -1em;
+	}
+	/* line 2036, ../scss/base/talentcommunity.scss */
+	body.current .content .current-tagline {
+	  background-color: #f2f2f2;
+	  padding-bottom: 7em;
+	  padding-top: 28px;
+	}
+	/* line 2040, ../scss/base/talentcommunity.scss */
+	body.current .content .current-tagline::before {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  overflow: visible;
+	  width: 100%;
+	  height: 8em;
+	  background: #f2f2f2;
+	  transform: skewY(3deg) translateY(-50%);
+	  -moz-transform: skewY(3deg) translateY(-50%);
+	  -o-transform: skewY(3deg) translateY(-50%);
+	  -webkit-transform: skewY(3deg) translateY(-50%);
+	  z-index: -1;
+	}
+	/* line 2057, ../scss/base/talentcommunity.scss */
+	body.current .content .threepanel-round {
+	  background-color: #fff;
+	  padding-bottom: 11em;
+	  padding-top: 7em;
+	}
+	/* line 2061, ../scss/base/talentcommunity.scss */
+	body.current .content .threepanel-round::before {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 17em;
+	  overflow: visible;
+	  width: 100%;
+	  height: 8em;
+	  background: #fff;
+	  transform: skewY(-3deg) translateY(-50%);
+	  -moz-transform: skewY(-3deg) translateY(-50%);
+	  -o-transform: skewY(-3deg) translateY(-50%);
+	  -webkit-transform: skewY(-3deg) translateY(-50%);
+	}
+	@media (max-width: 568px) {
+	  /* line 2061, ../scss/base/talentcommunity.scss */
+	  body.current .content .threepanel-round::before {
+		top: 31em;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 2057, ../scss/base/talentcommunity.scss */
+	  body.current .content .threepanel-round {
+		padding-left: 10%;
+	  }
+	}
+	/* line 2083, ../scss/base/talentcommunity.scss */
+	body.current .content .threepanel-round .asc-panel p {
+	  height: 170px;
+	}
+	/* line 2088, ../scss/base/talentcommunity.scss */
+	body.current .content .video-slider {
+	  background-color: #e9eae9;
+	  padding-bottom: 9em;
+	}
+	/* line 2091, ../scss/base/talentcommunity.scss */
+	body.current .content .video-slider::before {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 72em;
+	  overflow: visible;
+	  width: 100%;
+	  height: 8em;
+	  background: #e9eae9;
+	  transform: skewY(3deg) translateY(-50%);
+	  -moz-transform: skewY(3deg) translateY(-50%);
+	  -o-transform: skewY(3deg) translateY(-50%);
+	  -webkit-transform: skewY(3deg) translateY(-50%);
+	}
+	@media (max-width: 767px) {
+	  /* line 2091, ../scss/base/talentcommunity.scss */
+	  body.current .content .video-slider::before {
+		top: 158em;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 2091, ../scss/base/talentcommunity.scss */
+	  body.current .content .video-slider::before {
+		top: 165em;
+	  }
+	}
+	/* line 2113, ../scss/base/talentcommunity.scss */
+	body.current .content .join-community {
+	  background-color: white;
+	  padding-bottom: 7em;
+	}
+	@media (max-width: 568px) {
+	  /* line 2113, ../scss/base/talentcommunity.scss */
+	  body.current .content .join-community {
+		padding-bottom: 16em;
+	  }
+	}
+	/* line 2121, ../scss/base/talentcommunity.scss */
+	body.current .panel-image-round {
+	  height: 300px;
+	  width: 300px;
+	  border-radius: 50%;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  position: relative;
+	  background-color: #e9eae9;
+	  z-index: 4;
+	  margin-bottom: -2.5em;
+	}
+	/* line 2132, ../scss/base/talentcommunity.scss */
+	body.current .panel-image-round i {
+	  z-index: 10;
+	  color: rgba(255, 255, 255, 0.7);
+	  font-size: 90px;
+	  margin-top: 100px;
+	  margin-left: 112px;
+	}
+	/* line 2138, ../scss/base/talentcommunity.scss */
+	body.current .panel-image-round i:hover {
+	  color: white;
+	}
+	/* line 2143, ../scss/base/talentcommunity.scss */
+	body.current .panel-bottom-round {
+	  height: 350px;
+	  width: 350px;
+	  border-radius: 50%;
+	  border: 1px solid white;
+	  text-align: center;
+	  background-color: #e9eae9;
+	  position: relative;
+	  z-index: 3;
+	}
+	/* line 2152, ../scss/base/talentcommunity.scss */
+	body.current .panel-bottom-round h5 {
+	  padding-top: 3.2em;
+	}
+	/* line 2155, ../scss/base/talentcommunity.scss */
+	body.current .panel-bottom-round p {
+	  padding-left: 2.5em;
+	  padding-right: 2.5em;
+	}
+	@media (max-width: 568px) {
+	  /* line 2143, ../scss/base/talentcommunity.scss */
+	  body.current .panel-bottom-round {
+		height: 300px;
+		width: 300px;
+	  }
+	}
+	/* line 2165, ../scss/base/talentcommunity.scss */
+	body.current .threepanel-round .round-image-row {
+	  margin-left: -3em !important;
+	}
+	/* line 2168, ../scss/base/talentcommunity.scss */
+	body.current .threepanel-round .round-copy-row {
+	  margin-right: -3em !important;
+	}
+	@media (max-width: 568px) {
+	  /* line 2172, ../scss/base/talentcommunity.scss */
+	  body.current #img-circle-two, body.current #img-circle-three {
+		margin-top: 4em;
+	  }
+	}
+	/* line 2177, ../scss/base/talentcommunity.scss */
+	body.current section.section.post-banner {
+	  background-image: url("/img/current/infographic.jpg");
+	  background-position: center 80%;
+	}
+	/* line 2182, ../scss/base/talentcommunity.scss */
+	body.current .asc-signup-head h2 {
+	  color: #3d423a;
+	}
+	/* line 2187, ../scss/base/talentcommunity.scss */
+	body.current #account-setting-wrapper a {
+	  color: black;
+	}
+	/* line 2192, ../scss/base/talentcommunity.scss */
+	body.current #actions-on-me #asc-profile-btn {
+	  background-color: #FF6D52;
+	  font-size: 10px !important;
+	}
+	/* line 2196, ../scss/base/talentcommunity.scss */
+	body.current #actions-on-me #asc-sign-out-button {
+	  background-color: #e9eae9;
+	  font-size: 10px !important;
+	  color: black;
+	}
+	/* line 2202, ../scss/base/talentcommunity.scss */
+	body.current #bg_pattern {
+	  background-image: url("/img/icons/img.png");
+	  position: fixed;
+	  opacity: 0.8;
+	  left: 0px;
+	  top: 0px;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 1;
+	}
+	/* line 2212, ../scss/base/talentcommunity.scss */
+	body.current ._landing > .hero-wrap {
+	  z-index: 3;
+	}
+	/* line 2216, ../scss/base/talentcommunity.scss */
+	body.current .asc-info-page {
+	  margin-bottom: 7em;
+	}
+	/* line 2218, ../scss/base/talentcommunity.scss */
+	body.current .asc-info-page h2 {
+	  color: #3d423a;
+	}
+	@media (max-width: 568px) {
+	  /* line 2222, ../scss/base/talentcommunity.scss */
+	  body.current #signindiv {
+		margin-top: 6em;
+		padding-bottom: 13em;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------- FOOTER.CURRENT LANDING CONTENT  ------------------- */
+
+	/* line 1911, ../scss/base/talentcommunity.scss */
+	footer#current {
+	  overflow: hidden;
+	  background-color: #202020;
+	  color: #d4d5d3;
+	  text-align: center;
+	  padding: 0em 4.5%;
+	  position: fixed;
+	  z-index: 9999;
+	}
+	/* line 1919, ../scss/base/talentcommunity.scss */
+	footer#current li {
+	  margin-bottom: 0;
+	  font-size: 1.1em;
+	  border-top: none;
+	  padding: 0 1.5em 0 0;
+	}
+	/* line 1925, ../scss/base/talentcommunity.scss */
+	footer#current .legal {
+	  float: right;
+	  font-size: .75em;
+	  margin-top: 1.5em;
+	}
+	/* line 1930, ../scss/base/talentcommunity.scss */
+	footer#current .copyright {
+	  text-transform: uppercase;
+	  letter-spacing: .1em;
+	  display: inline;
+	  margin: .3em 2em 0;
+	  color: #d4d5d3;
+	}
+	/* line 1937, ../scss/base/talentcommunity.scss */
+	footer#current .social-media-footer {
+	  float: left;
+	}
+	/* line 1939, ../scss/base/talentcommunity.scss */
+	footer#current .social-media-footer a {
+	  color: #a9aba7;
+	  text-decoration: none;
+	  font-size: 100%;
+	}
+	/* line 1943, ../scss/base/talentcommunity.scss */
+	footer#current .social-media-footer a:hover {
+	  color: #FF6D52;
+	}
+	/* line 1946, ../scss/base/talentcommunity.scss */
+	footer#current .social-media-footer a .fa {
+	  display: inline-block;
+	  font: normal normal normal 14px/1 FontAwesome;
+	  font-size: inherit;
+	}
+	/* line 1952, ../scss/base/talentcommunity.scss */
+	footer#current .social-media-footer li {
+	  display: inline-block;
+	  line-height: 1;
+	}
+	/* line 1957, ../scss/base/talentcommunity.scss */
+	footer#current .legal-links li {
+	  display: inline;
+	  margin: 0 -.1em;
+	}
+	/* line 1961, ../scss/base/talentcommunity.scss */
+	footer#current ul {
+	  list-style: none;
+	  display: inline;
+	  margin-top: 1.25em;
+	  margin-right: 0em;
+	}
+	/* line 1967, ../scss/base/talentcommunity.scss */
+	footer#current .monogram {
+	  width: 2em;
+	  height: 2em;
+	  display: inline;
+	  margin: 0 0 -.75em 1.5em;
+	}
+	
+	
+/* --------------------------------------------------------------------- */
+/* --------------------- GENERIC LANDING CONTENT ----------------------- */
+
+	/* line 2234, ../scss/base/talentcommunity.scss */
+	header.generic_landing_footer {
+	  max-height: 81px;
+	}
+	/* line 2236, ../scss/base/talentcommunity.scss */
+	header.generic_landing_footer #social-bar {
+	  max-height: 30px;
+	}
+	/* line 2239, ../scss/base/talentcommunity.scss */
+	header.generic_landing_footer .inner-container.nav-container {
+	  max-height: 41px;
+	  padding-top: 10px;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------- GENERIC LANDING CONTENT HERO -------------------- */
+
+	@media (max-width: 568px) {
+	  /* line 2248, ../scss/base/talentcommunity.scss */
+	  div._landing.landing_content.generic_landing #background-image {
+		top: 0;
+	  }
+	}
+	/* line 2253, ../scss/base/talentcommunity.scss */
+	div._landing.landing_content.generic_landing div.hero-wrap > div.hero-controls {
+	  bottom: 90px;
+	}
+	@media (max-width: 992px) {
+	  /* line 2253, ../scss/base/talentcommunity.scss */
+	  div._landing.landing_content.generic_landing div.hero-wrap > div.hero-controls {
+		bottom: 185px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 2253, ../scss/base/talentcommunity.scss */
+	  div._landing.landing_content.generic_landing div.hero-wrap > div.hero-controls {
+		bottom: 185px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 2253, ../scss/base/talentcommunity.scss */
+	  div._landing.landing_content.generic_landing div.hero-wrap > div.hero-controls {
+		bottom: 200px;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------- GENERIC FOOTER ------------------------------ */
+
+	/* line 2267, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer {
+	  padding-top: 25px;
+	}
+	/* line 2269, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer div.generic_landing_footer_div {
+	  width: 95%;
+	}
+	/* line 2272, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer div > .copyright {
+	  float: right;
+	  text-align: right;
+	  bottom: 0;
+	  height: 13px;
+	  margin-bottom: 4.071428571em;
+	  padding-bottom: 15px;
+	  padding-top: 0;
+	  width: 300px;
+	}
+	/* line 2282, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer .about-landing {
+	  width: 67.7%;
+	  margin: 0 auto;
+	  padding-bottom: 30px;
+	  float: none;
+	}
+	/* line 2287, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer .about-landing h3, footer.generic_landing_footer .about-landing p {
+	  margin: 0 15px;
+	}
+	/* line 2290, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer .about-landing h3 {
+	  border-bottom: 1px dotted #a3a3a3;
+	  font-size: 1.4285714285714286em;
+	  font-weight: 700;
+	  line-height: 1.6em;
+	  margin-bottom: 13px;
+	}
+	/* line 2297, ../scss/base/talentcommunity.scss */
+	footer.generic_landing_footer .about-landing p {
+	  font-family: 'GEInspira';
+	  font-size: 14px;
+	  text-align: left;
+	}
+	@media (max-width: 992px) {
+	  /* line 2282, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer .about-landing {
+		width: 80%;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 2282, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer .about-landing {
+		width: 95%;
+	  }
+	  /* line 2307, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer .about-landing p {
+		text-align: justify;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 2312, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer div > .logos {
+		display: block;
+	  }
+	}
+	@media (max-width: 320px) {
+	  /* line 2318, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer div.generic_landing_footer_div {
+		height: 140px;
+	  }
+	  /* line 2320, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer div.generic_landing_footer_div .copyright, footer.generic_landing_footer div.generic_landing_footer_div .logos {
+		width: 100%;
+		float: none;
+		text-align: center;
+		left: 0;
+	  }
+	  /* line 2326, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer div.generic_landing_footer_div .copyright {
+		position: relative;
+		top: 50%;
+	  }
+	  /* line 2330, ../scss/base/talentcommunity.scss */
+	  footer.generic_landing_footer div.generic_landing_footer_div .logos {
+		top: 0;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------- UNIVERSITY  ---------------------------- */
+
+	/* line 2339, ../scss/base/talentcommunity.scss */
+	._landing._university .fa {
+	  font-size: 24px;
+	  margin-top: 24px;
+	  padding-left: 15px;
+	  color: #08A5E0;
+	  opacity: 0.5;
+	}
+	/* line 2345, ../scss/base/talentcommunity.scss */
+	._landing._university .fa:hover {
+	  cursor: pointer;
+	  opacity: 1;
+	}
+	/* line 2350, ../scss/base/talentcommunity.scss */
+	._landing._university #ge-blog {
+	  height: 25px;
+	  margin-top: -6px;
+	  opacity: 0.5;
+	}
+	/* line 2354, ../scss/base/talentcommunity.scss */
+	._landing._university #ge-blog:hover {
+	  cursor: pointer;
+	  opacity: 1;
+	}
+
+	/* line 2362, ../scss/base/talentcommunity.scss */
+	.university section.section.post-banner {
+	  background-image: url("/img/university/whattheworldneeds.jpg");
+	  background-position: top center;
+	  margin-top: 10px;
+	}
+	/* line 2367, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials {
+	  margin-top: 10px;
+	}
+	/* line 2369, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials p {
+	  font-size: 13px;
+	}
+	/* line 2372, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials p em a {
+	  font-size: 15px;
+	}
+	/* line 2377, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials img {
+	  border-radius: 50%;
+	  height: 80px;
+	  width: 80px;
+	  margin-left: 18px;
+	}
+	/* line 2383, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials a {
+	  text-decoration: none;
+	  color: #08a5e1;
+	}
+	/* line 2387, ../scss/base/talentcommunity.scss */
+	.university .lp-testimonials .col-sm-3 {
+	  text-align: center;
+	}
+	/* line 2391, ../scss/base/talentcommunity.scss */
+	.university article.leadership {
+	  min-height: 465px;
+	}
+	/* line 2394, ../scss/base/talentcommunity.scss */
+	.university .summary {
+	  min-height: 465px;
+	}
+	/* line 2396, ../scss/base/talentcommunity.scss */
+	.university .summary .title-box {
+	  min-height: 465px;
+	}
+	/* line 2400, ../scss/base/talentcommunity.scss */
+	.university .university-bottom-panel {
+	  min-height: 290px;
+	}
+	/* line 2402, ../scss/base/talentcommunity.scss */
+	.university .university-bottom-panel p {
+	  height: 81px;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------- INTERNSHIPS ---------------------------- */
+
+	/* line 2410, ../scss/base/talentcommunity.scss */
+	.internships #internship-list a {
+	  text-decoration: none;
+	}
+	/* line 2412, ../scss/base/talentcommunity.scss */
+	.internships #internship-list a:hover, .internships #internship-list a.selected, .internships #internship-list a.clicked {
+	  color: #08a5e1;
+	}
+	/* line 2417, ../scss/base/talentcommunity.scss */
+	.internships .internship-locations {
+	  max-height: 400px;
+	  overflow: scroll;
+	}
+	/* line 2420, ../scss/base/talentcommunity.scss */
+	.internships .internship-locations.hide {
+	  display: none;
+	}
+	/* line 2423, ../scss/base/talentcommunity.scss */
+	.internships .internship-locations.selected {
+	  display: block;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------------------ FRANCE  ------------------------------ */
+
+	/* line 2432, ../scss/base/talentcommunity.scss */
+	.france #main-nav a.brand {
+	  margin-left: 0px;
+	  font-size: 17px;
+	  padding: 15px 20px;
+	}
+	/* line 2436, ../scss/base/talentcommunity.scss */
+	.france #main-nav a.brand img {
+	  height: 48px;
+	}
+	@media (max-width: 992px) {
+	  /* line 2442, ../scss/base/talentcommunity.scss */
+	  .france ._landing > .hero-wrap .hero-controls {
+		bottom: 160px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 2442, ../scss/base/talentcommunity.scss */
+	  .france ._landing > .hero-wrap .hero-controls {
+		bottom: 250px;
+	  }
+	}
+	/* line 2450, ../scss/base/talentcommunity.scss */
+	.france #asc-settings-menu .asc-no-profile-img {
+	  width: auto;
+	}
+	/* line 2454, ../scss/base/talentcommunity.scss */
+	.france #take-to-english-site {
+	  text-decoration: none;
+	  font-size: 12px;
+	  margin-top: -24px;
+	  margin-left: -83px;
+	}
+	@media (max-width: 992px) {
+	  /* line 2454, ../scss/base/talentcommunity.scss */
+	  .france #take-to-english-site {
+		margin-top: 37px;
+		margin-left: -103px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 2454, ../scss/base/talentcommunity.scss */
+	  .france #take-to-english-site {
+		margin-top: 0px;
+		margin-left: 0px;
+	  }
+	}
+	@media (max-width: 568px) {
+	  /* line 2454, ../scss/base/talentcommunity.scss */
+	  .france #take-to-english-site {
+		margin-top: 0px;
+		margin-left: 0px;
+	  }
+	}
+	/* line 2472, ../scss/base/talentcommunity.scss */
+	.france section.section.post-banner {
+	  background-image: url("/img/france/grfrarticles.jpg");
+	  background-position: top center;
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------------------ DIGITAL ------------------------------ */
+
+	/* line 2480, ../scss/base/talentcommunity.scss */
+	#asc-signin-faq-link {
+	  display: none;
+	}
+
+	/* line 2486, ../scss/base/talentcommunity.scss */
+	.digital section.section.post-banner {
+	  background-image: url("/img/digital/articles-header.jpg");
+	}
+	/* line 2489, ../scss/base/talentcommunity.scss */
+	.digital article.locations div.map-container div.map-wrap div.map-image {
+	  height: 300px;
+	}
+	@media (max-width: 767px) {
+	  /* line 2489, ../scss/base/talentcommunity.scss */
+	  .digital article.locations div.map-container div.map-wrap div.map-image {
+		height: 190px;
+	  }
+	}
+	/* line 2496, ../scss/base/talentcommunity.scss */
+	.digital .teams .team-header {
+	  text-align: center;
+	}
+	@media (max-width: 767px) {
+	  /* line 2499, ../scss/base/talentcommunity.scss */
+	  .digital .teams img {
+		padding-bottom: 15px;
+	  }
+	}
+	@media (max-width: 767px) {
+	  /* line 2504, ../scss/base/talentcommunity.scss */
+	  .digital .teams .pull-right {
+		float: none !important;
+	  }
+	}
+	/* line 2512, ../scss/base/talentcommunity.scss */
+	.digital .social-connect-icons .fa {
+	  font-size: 26px;
+	  margin-right: 10px;
+	  color: white;
+	}
+	/* line 2517, ../scss/base/talentcommunity.scss */
+	.digital .social-connect-icons .fa-twitter {
+	  background-color: #1DA1F2;
+	  padding: 8px;
+	}
+	/* line 2521, ../scss/base/talentcommunity.scss */
+	.digital .social-connect-icons .fa-facebook {
+	  background-color: #3b5998;
+	  padding: 8px 16px;
+	}
+	/* line 2525, ../scss/base/talentcommunity.scss */
+	.digital .social-connect-icons .fa-linkedin {
+	  background-color: #006fa6;
+	  padding: 7px 9px;
+	}
+	/* line 2529, ../scss/base/talentcommunity.scss */
+	.digital .social-connect-icons .glassdoor {
+	  height: 41px;
+	  margin-top: -10px;
+	}
+	/* line 2535, ../scss/base/talentcommunity.scss */
+	.digital ._staff .asc-staff-header {
+	  background-image: url("/img/digital/articles-header.jpg");
+	  background-position: bottom center;
+	}
+	/* line 2540, ../scss/base/talentcommunity.scss */
+	.digital #staff-title {
+	  display: none;
+	}
+	@media (max-width: 767px) {
+	  /* line 2553, ../scss/base/talentcommunity.scss */
+	  .digital section.section {
+		padding: 60px 15px 70px;
+	  }
+	}
+
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------- STYLE GUIDE ---------------------------- */
+
+	/* line 11, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section {
+	  margin: 30px 0;
+	}
+	/* line 14, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section h2 {
+	  font-size: 20px;
+	  font-weight: 300;
+	}
+	/* line 20, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-description p {
+	  margin: 20px 0 20px;
+	}
+	/* line 25, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-content {
+	  padding: 30px 0;
+	}
+	/* line 29, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-example {
+	  margin-bottom: 20px;
+	}
+	/* line 49, ../scss/base/config/mixins.scss */
+	section.styleguide-section div.section-example:before, section.styleguide-section div.section-example:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	section.styleguide-section div.section-example:after {
+	  clear: both;
+	}
+	/* line 32, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-example p.example-label {
+	  float: left;
+	  width: 160px;
+	  text-align: right;
+	  margin: 0;
+	  font-weight: normal;
+	}
+	/* line 38, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-example p.example-label span.example-caption {
+	  font-size: 12px;
+	}
+	/* line 42, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section div.section-example div.example {
+	  margin-left: 190px;
+	}
+
+	/* line 49, ../scss/base/config/mixins.scss */
+	section.styleguide-section.colors ul:before, section.styleguide-section.colors ul:after {
+	  content: " ";
+	  /* 1 */
+	  display: table;
+	  /* 2 */
+	}
+	/* line 54, ../scss/base/config/mixins.scss */
+	section.styleguide-section.colors ul:after {
+	  clear: both;
+	}
+	/* line 56, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li {
+	  height: 120px;
+	  margin: 0 10px 10px;
+	  float: left;
+	}
+	/* line 60, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li span.swatch {
+	  display: block;
+	  height: 90px;
+	  width: 90px;
+	  border: 5px solid white;
+	}
+	/* line 66, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li p {
+	  font-size: 13px;
+	  margin: 5px 0 0;
+	  font-weight: normal;
+	}
+	/* line 74, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-primary span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 79, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-primary-lighten span.swatch {
+	  background: #0cb6f6;
+	}
+	/* line 84, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-primary-darken span.swatch {
+	  background: #0793c8;
+	}
+	/* line 89, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-secondary span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 94, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-secondary-lighten span.swatch {
+	  background: #0cb6f6;
+	}
+	/* line 99, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-secondary-darken span.swatch {
+	  background: #0793c8;
+	}
+	/* line 104, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-bg span.swatch {
+	  background: #f2f2f2;
+	}
+	/* line 109, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-bg-darken span.swatch {
+	  background: #e5e5e5;
+	}
+	/* line 114, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-bg-dark span.swatch {
+	  background: #b3b3b3;
+	}
+	/* line 119, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-bg-border span.swatch {
+	  background: #cccccc;
+	}
+	/* line 124, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-bg-darken-border span.swatch {
+	  background: #cccccc;
+	}
+	/* line 129, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text span.swatch {
+	  background: #37393f;
+	}
+	/* line 134, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text-darken span.swatch {
+	  background: #2b2d31;
+	}
+	/* line 139, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text-lighten span.swatch {
+	  background: #43454d;
+	}
+	/* line 144, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text-med span.swatch {
+	  background: #878787;
+	}
+	/* line 149, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text-light span.swatch {
+	  background: #c7c7c7;
+	}
+	/* line 154, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-text-link span.swatch {
+	  background: #1d9ff2;
+	}
+	/* line 159, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-success span.swatch {
+	  background: #98ca4a;
+	}
+	/* line 164, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-danger span.swatch {
+	  background: #da4f49;
+	}
+	/* line 169, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-error span.swatch {
+	  background: #c9533e;
+	}
+	/* line 174, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-facebook span.swatch {
+	  background: #3b5998;
+	}
+	/* line 179, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.colors li.color-linkedin span.swatch {
+	  background: #0e76a8;
+	}
+	/* line 191, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons div.button-wrap {
+	  margin: 0 0 20px;
+	}
+	/* line 197, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-primary span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 202, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-primary-text span.swatch {
+	  background: white;
+	}
+	/* line 207, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-secondary span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 212, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-secondary-text span.swatch {
+	  background: white;
+	}
+	/* line 217, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-plain span.swatch {
+	  background: #edeff2;
+	}
+	/* line 222, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-plain-text span.swatch {
+	  background: #37393f;
+	}
+	/* line 227, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-default span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 232, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-default-text span.swatch {
+	  background: #08a5e1;
+	}
+	/* line 237, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-success span.swatch {
+	  background: #98ca4a;
+	}
+	/* line 242, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-success-text span.swatch {
+	  background: white;
+	}
+	/* line 247, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-danger span.swatch {
+	  background: #da4f49;
+	}
+	/* line 252, ../scss/base/sections/styleguide.scss */
+	section.styleguide-section.buttons li.color-btn-danger-text span.swatch {
+	  background: white;
+	}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* ----------------------------- END PAGE  ----------------------------- */
